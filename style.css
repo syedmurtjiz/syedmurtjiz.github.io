@@ -1,6 +1,6 @@
 body {
     background-color: black; 
-    background-image: linear-gradient(to right, black , rgb(81, 3, 81));
+    background-image: linear-gradient(to right, black , rgb(56, 13, 56));
     color: #333;
     margin: 0;
     padding: 0;
@@ -22,7 +22,7 @@ body {
     align-items: center;
     justify-content: space-between;
     margin-top: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
   
   .header-1 {
@@ -79,6 +79,7 @@ body {
     display: flex;
     align-items: center;
     background-color: #140c1c;
+    margin-bottom: 60px;
 }
 .profile-1{
 
@@ -124,3 +125,232 @@ body {
     font-weight: bold;
     color: whitesmoke;
 }
+
+.achivements {
+  width: 1100px;
+  margin: 0 auto;
+  border: 1px solid #573f86;
+  border-radius: 10px;
+  display: flex;
+  background-color: #140c1c;
+  margin-bottom: 30px;
+}
+
+.achivement {
+  padding: 20px 50px;
+  margin-top: 20px;
+  margin-left: 30px;
+  color: rgb(255, 255, 255);
+  
+}
+
+.achivement h2 {
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.about {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 8%;
+}
+
+.about-1{
+  border: 1px solid #573f86;
+  border-radius: 10px;
+  background-color: #140c1c;
+  padding: 0px 30px;
+  color: white;
+  font-family: "Sora", sans-serif;
+}
+
+.about-1 h1{
+  margin-top: 22px;
+  font-weight: bold;
+  font-size: 50;
+  
+}
+
+.about-1 p{
+  color: #bebdbf;
+  font-weight: 200;
+  font-size: 25;
+  margin-bottom: 30px;
+  margin-top: -15px;
+}
+
+.about-1 a{
+  background-color: blueviolet;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 12px 25px;
+  color: white;
+  font-weight: bold;
+  margin-top: 20px;
+
+}
+
+.about-2 {
+  border: 1px solid #573f86;
+  border-radius: 10px;
+  margin-left: 10px;
+  background-color: #140c1c;
+  padding: 10px 0px 0px; 
+}
+
+.about-2 h2{
+  margin-left: 30px;
+  color: white;
+}
+
+.about-2 p{
+  margin-left: 30px;
+  color: white;
+  font-weight: 300;
+  font-size: large;
+}
+
+.skills {
+  width: 1100px;
+  margin: 0 auto;
+  
+}
+
+.skills-1 {
+  text-align: center
+  
+}
+
+.skills-1 h2 {
+  font-size: 35; 
+  color: #905ef8;
+}
+
+.skills-1 p {
+  font-size: 20;
+  color: #bebdbf;
+  margin-top: -15px;
+}
+
+.skills-2 {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 0 auto;
+  display: flex;
+}
+
+.skills-image img{
+  width: 120px;
+  height: 70px;
+  border: 1px solid blueviolet;
+  padding: 20px 18px 65px 18px;
+  margin-right:30px ;
+  background-color: #140c1c;
+  border-radius: 20px;
+}
+
+.skills-image h2{
+  margin-top: -50px;
+  margin-left: 50px;
+}
+
+.skills-image p {
+  margin-left: 45px;
+  margin-top: 35px;
+  font-weight: 300;
+  font-size: 20;
+  color: aliceblue;
+}
+.recent-projects{
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.recent-projects-head{
+  font-size: 30;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.recent-projects-main {
+  border: 2px solid #905ef8;
+  border-radius: 15px;
+  background-color: #140c1c;
+  display: flex;
+}
+.recent-projects-left {
+  padding: 30px 20px;
+  margin-left: 20px;
+}
+
+.recent-projects-1 h2 {
+  color: whitesmoke;
+  font-size: 25;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.recent-projects-1 a{
+  text-decoration: none;
+  font-size: 35;
+  font-weight: 700;
+  
+}
+.recent-projects-1 p{
+  text-decoration: none;
+  font-size: 18;
+  font-weight: 300;
+  color:white;
+}
+.recent-projects-2{
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.recent-projects-2 a{
+  text-decoration: none;
+  background-color: #2a1454;
+  color: aliceblue;
+  border-radius: 18px;
+  margin-right: 10px;
+  padding: 10px 15px;
+  
+}
+
+.recent-projects-2 p{
+  color: whitesmoke;
+  margin-top: 40px;
+}
+
+.recent-projects-3 {
+  display: flex;
+  margin: 0 auto;
+  }
+
+  .recent-projects-3-right {
+    
+    margin-left: 30px;
+    margin-top: -15px;
+  }
+
+  .recent-projects-3-right h3{
+    color: white;
+    font-weight: 250;
+    font-size: 17;
+  }
+  .recent-projects-3-right p{
+    color: rgb(76, 76, 76);
+    font-weight: 250;
+    font-size: 17;
+    margin-top: -5px;
+  }
+
+  .recent-projects-right {
+    padding: 32px 30px;
+  
+    
+  }
+.recent-projects-3-right img{
+  background: lightslategray;
+}
+
+  
