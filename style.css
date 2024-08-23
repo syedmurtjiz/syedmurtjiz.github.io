@@ -1,16 +1,121 @@
 body {
-    background-color: #f5f5f5;
+    background-color: black; 
+    background-image: linear-gradient(to right, black , rgb(81, 3, 81));
     color: #333;
-    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 
 .main {
-    max-width: 1100px;
+    width: 1100px;
     margin: 0 auto;
     
 }
 
 
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .header-1 {
+    display: flex;
+    float: left;
+  }
+  
+  .header-1 img {
+    width: 55px;
+    margin-right: 10px;
+  }
+  
+  .header-1 h2 {
+    font-size: 18px;
+    color: white;
+    margin-left: 15px;
+    }
+  
+  .header-2 ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    margin-right: 25px;
+  }
+  
+  .header-2 li {
+    margin-right: 20px;
+  }
+  
+  .header-2 a {
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+    font-weight: bold;
+  } 
 
+  .header-2 .back {
+    
+    border-radius: 40px;
+    background-color:#8750f7 ;
+    padding: 17px 15px;
+    text-align: center;
+    font-weight: bold;
 
+  } 
+
+  .profile{
+    width: 1100px;
+    margin: 0 auto;
+    border: 1px solid #342355;
+    border-radius: 5px;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    background-color: #140c1c;
+}
+.profile-1{
+
+}
+.profile-1 img{
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    border: 2px solid #6949a8;
+    border-radius: 16px;
+}
+
+.profile-2{
+    margin-right: 523px;
+    margin-left: -93px;
+    margin-top: -49px;
+}
+
+.profile-2 h1{
+    font-weight: bold;
+    font-size: 58px;
+    color:  #905ef8;
+    margin-top: 10px;   
+}
+
+.profile-2 p{
+    font-size: 22px;
+}
+
+.profile-2 button{
+    background-color: #5a3f91;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 2px;
+}
+
+.profile-2 a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
