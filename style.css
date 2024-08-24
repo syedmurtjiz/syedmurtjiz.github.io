@@ -477,6 +477,31 @@ padding: 25px 22px;
   color: white;
 }
 
+.edustyle h3::before{
+  content: "";
+  height: 13px;
+  width: 13px;
+  position: absolute;
+  margin-left: -25px;
+  margin-top: 7px;
+  border-radius: 20px;
+  background-color: whitesmoke;
+}
+
+.edustyle ::before{
+  content: "";
+  height: 18%;
+  width: 1px;
+  position: absolute;
+  background-color: whitesmoke;
+  margin-left: -20px;
+  margin-top: -45px;
+}
+
+.education-2::before{
+  height: 0px;
+}
+
 .education-1 h5{
   font-size: 18;
   font-weight: 250;
