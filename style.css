@@ -488,17 +488,20 @@ padding: 25px 22px;
   background-color: whitesmoke;
 }
 
-.edustyle ::before{
+.edustyle::before{
   content: "";
-  height: 18%;
+  height: 28%;
   width: 1px;
   position: absolute;
   background-color: whitesmoke;
   margin-left: -20px;
-  margin-top: -45px;
+  margin-top: 8px;
 }
 
 .education-2::before{
+  height: 0px;
+}
+.experience:last-child::before, .past-role:last-child::before{
   height: 0px;
 }
 
