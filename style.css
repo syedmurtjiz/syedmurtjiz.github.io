@@ -692,6 +692,7 @@ padding: 25px 22px;
   border-radius: 15px;
   margin-top: 15px;
   background-color: #140c1c;
+  line-height: 2;
 }
 
 .work-togather-head{
@@ -754,6 +755,8 @@ padding: 10px 20px;
 }
 .info a{
   color: whitesmoke;
+  font-weight: 500;
+  font-size: 18;
 }
 a:hover{
   color: #502d9b;
@@ -773,6 +776,7 @@ a:hover{
 }
 
 .footer {
+  width: 1100px;
  background-color: #10171c;
  justify-content: center;
  margin: 0 auto;
