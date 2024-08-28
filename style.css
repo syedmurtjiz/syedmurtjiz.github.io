@@ -692,7 +692,7 @@ padding: 25px 22px;
   border-radius: 15px;
   margin-top: 15px;
   background-color: #140c1c;
-  line-height: 2;
+
 }
 
 .work-togather-head{
@@ -701,15 +701,17 @@ padding: 25px 22px;
 }
 
 .work-togather-head h2{
-  font-size: 35;
+  font-size: 37;
   font-weight: 700;
   color: #e1d3fd;
+  line-height: 1;
 }
 
 .work-togather-head p{
-  font-size: 17;
+  font-size: 19;
   font-weight: 400;
   color: #ffffff;
+  line-height: 1.5;
 }
 .work-togather-body {
   display: flex; 
@@ -720,6 +722,7 @@ padding: 25px 22px;
 .form{
   margin-left: 36px;
   margin-top: 10px;
+  line-height: 1.5;
 
 }
 .hr{
@@ -733,9 +736,10 @@ hr:hover{
 .form-1 input{
 background-color: #10171c;
 color: whitesmoke;
-border: 0px;
+border: none;
 text-decoration: none;
 padding: 10px 20px;
+line-height: 3;
 }
 
 .form-1 textarea{
@@ -752,11 +756,13 @@ padding: 10px 20px;
   color: whitesmoke;
   font-size: 17;
   font-weight: 300;
+  line-height: 2;
 }
 .info a{
   color: whitesmoke;
   font-weight: 500;
   font-size: 18;
+  line-height: 3;
 }
 a:hover{
   color: #502d9b;
