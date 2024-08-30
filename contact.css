@@ -141,14 +141,16 @@ body {
   }
   
   .work-togather-head h2{
-    font-size: 37;
+    font-size: 25px;
+    margin-left: -24px;
     font-weight: 700;
     color: #e1d3fd;
     line-height: 1;
   }
   
   .work-togather-head p{
-    font-size: 19;
+    font-size: 15px;
+    margin-left: -23px;
     font-weight: 400;
     color: #ffffff;
     line-height: 1.5;
@@ -160,7 +162,7 @@ body {
   } 
   
   .form{
-    margin-left: 36px;
+    margin-left: 35px;
     margin-top: 20px;
     line-height: 1.5;
     background-color:#140c1c;
@@ -189,11 +191,12 @@ body {
   
   .form-1 textarea{
     margin-bottom: 50px;
-    padding: 10px 20px;
+    padding: 12px 23px;
     background-color: #2E353A;
     color: #ffffff;
-    margin-left: 15px;
+    margin-left: 11px;
     border: none;
+
   }
   
   .info{
