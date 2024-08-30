@@ -232,6 +232,13 @@ body {
     margin-bottom: 50px;
     border-radius: 20px;
     background-color: cadetblue;
+    display: none;
+  }
+  .Portfolio-items-left:hover .specialization-images-up-button,
+  .Portfolio-items-right:hover .specialization-images-up-button,
+  .Portfolio-items-down:hover .specialization-images-up-button,
+  .Portfolio-items-down-right:hover .specialization-images-up-button{
+    display: block;
   }
   .specialization-images-up-button h3{
     font-size: 25px;
@@ -251,7 +258,22 @@ body {
     font-weight: 600;
     margin-top: -50px;
     padding: 10px;
+    width: 100px;
+    height: 100px;
+    transition-property: width;
+    transition-duration: 5s;
+    transition-delay: 2s;
   }
+  .specialization-images-up-button i {
+    display: inline-block; 
+    transition: transform 0.2s ease;
+}
+
+.specialization-images-up-button:hover i {
+    transform: rotate(-400deg) translateX(1px); 
+}
+
+  
 
   .specialization-images-up-button:{
     color: black;
