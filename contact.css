@@ -131,7 +131,7 @@ body {
 .work-togather {
     width: 100%;
     margin: 0 auto;
-    background-color: #140c1c;
+    background-color:black;
   
   }
   
@@ -155,7 +155,7 @@ body {
   }
   .work-togather-body {
     display: flex; 
-    justify-content:space-between;
+    justify-content:center;
   
   } 
   
@@ -163,16 +163,16 @@ body {
     margin-left: 36px;
     margin-top: 20px;
     line-height: 1.5;
-    background-color: #2f2e30;
+    background-color:#140c1c;
     border-radius: 10px;
-  
+    padding: 10px 20px 40px;
   }
   
   .form-up{
     display: flex;
   }  
   .form-1 input{
-  background-color: #10171c;
+  background-color: #2E353A;
   color: whitesmoke;
   border: none;
   text-decoration: none;
@@ -190,35 +190,52 @@ body {
   .form-1 textarea{
     margin-bottom: 50px;
     padding: 10px 20px;
-    background-color: #10171c;
+    background-color: #2E353A;
     color: #ffffff;
     margin-left: 15px;
     border: none;
   }
   
   .info{
-    margin-top: -10px;
-    margin-right: 20px;
+    width: 300px;
+    padding: 80px;
+    margin-top: 90px;
+    font-size: 21px;
+    font-weight: 605;
   }
+  .info i{
+    float: left;
+    margin-right: 30px;
+    margin-top: -7px;
+    font-size: 30px;
+    color: red;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 10px 13px;
+}
   .services #design {
-    background-color: #10171c;
+    background-color: #2E353A;
     color: #ffffff;
-  float: left;
-  margin-left: 16px;
-  padding: 8px 18px 11px 283px;
-  border: none;
+    width: 195px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 7px;
+    border: none;
   }
   .info h3 {
     color: whitesmoke;
     font-size: 17;
     font-weight: 300;
-    line-height: 2;
+
   }
+
   .info a{
     color: whitesmoke;
     font-weight: 500;
     font-size: 18;
-    line-height: 3;
+    line-height: 2;
+    margin-top: -20px;
+    margin-left: 50px;
   }
   a:hover{
     color: #502d9b;
@@ -228,12 +245,12 @@ body {
   }
   .work-togather-button button{
     background-color: #502d9b;
-    padding: 5px 10px;
+    padding: 8px 20px;
     border-radius: 15px;
     color: whitesmoke;
     font-size: 15;
     font-weight: 700;
-    margin-left: 35px;
+    margin-left: 17px;
     margin-bottom: 20px;
   }
   

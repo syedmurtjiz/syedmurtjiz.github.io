@@ -212,16 +212,50 @@ body {
 
   }
   .specialization-image-down img{
-    border-radius: 50px;
+    border-radius: 20px;
   }
   .specialization-image-down-right{
     background-color: #333;
     padding: 20px 22px;
   }
   .specialization-image-down-right img{
-    border-radius: 50px;
+    border-radius: 20px;
   }
 
+  .specialization-images-up-button{
+    background-color: #f4effe;
+    position:absolute;
+    margin-left: 50px;
+    width: 33%;
+    padding: 3px;
+    margin-top: -140px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    background-color: cadetblue;
+  }
+  .specialization-images-up-button h3{
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .specialization-images-up-button p{
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: -15px;
+    margin-left: 10px;
+  }
+  .specialization-images-up-button i{
+    font-size: 40px;
+    float: right;
+    font-weight: 600;
+    margin-top: -50px;
+    padding: 10px;
+  }
+
+  .specialization-images-up-button:{
+    color: black;
+  }
 .header-2 ul {
     list-style: none;
     display: flex;
