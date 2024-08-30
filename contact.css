@@ -190,12 +190,13 @@ body {
   }  
   
   .form-1 textarea{
-    margin-bottom: 50px;
-    padding: 12px 23px;
+    width: 300px;
+    height: 150px;
     background-color: #2E353A;
     color: #ffffff;
     margin-left: 11px;
     border: none;
+    margin-bottom: 50px;
 
   }
   
@@ -219,7 +220,7 @@ body {
   .services #design {
     background-color: #2E353A;
     color: #ffffff;
-    width: 195px;
+    width: 205px;
     padding: 10px 20px;
     margin-left: 10px;
     border-radius: 7px;
