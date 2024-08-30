@@ -1,6 +1,5 @@
 body {
     background-color: black;
-    background-image: linear-gradient(to right, black, rgb(56, 13, 56));
     color: #333;
     margin: 0;
     padding: 0;
@@ -376,7 +375,6 @@ body {
     background-color: black; 
     background-image: linear-gradient(to right, rgb(64, 6, 64) , rgb(30, 23, 23) );
     justify-content: center;
-    padding: 45px 20px;
     margin-top: 30px;
     
 
@@ -387,7 +385,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    padding: 25px;
 }
 
 .footer-logo img {
@@ -399,7 +397,7 @@ body {
     display: flex;
     justify-content: center;
     margin-right: 10px;
-    margin-top: 15px;
+    margin-top: -15px;
     margin-left: 43px;
 }
 
