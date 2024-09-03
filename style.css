@@ -846,10 +846,12 @@ a:hover {
 }
 
 /* Media Query for Mobile Devices */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .main {
     width: 100%;
     margin: 0 auto;
+    background-color: black; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right,black, purple);
   }
 
   .header {
