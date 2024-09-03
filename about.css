@@ -164,7 +164,7 @@ body {
 }
 .education h3{
     color: #e6cffc;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 500px;
 }
 .education h2{
@@ -192,7 +192,7 @@ body {
 
 .edustyle::before {
     content: "";
-    height: 110px;
+    height: 125px;
     width: 1px;
     position: absolute;
     background-color: whitesmoke;
@@ -212,15 +212,14 @@ body {
 
 .fa-graduation-cap{
     float: left;
-    margin-right: 20px;
+    margin-right: 10px;
+    font-size: 25px;
     color: blueviolet;
 }
-.work{
-    margin-bottom: 20px;
-}
+
 .work h3{
     color: #e6cffc;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 500px;
 }
 .work h2{
@@ -239,6 +238,7 @@ body {
     float: left;
     margin-right: 20px;
     color: blueviolet;
+    font-size: 25px;
 }
 
 .skills {

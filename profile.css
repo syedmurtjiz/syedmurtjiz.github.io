@@ -134,14 +134,14 @@ body {
     margin: 0 auto;
 }
 .specialization-heading h2{
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 800;
-    color: #f4effe;
+    color: #b38dff;
 }
 .specialization-heading p{
     font-size: 20px;
     font-weight: 500;
-    margin-top: -20px;
+    margin-top: -12px;
     color: white;
 }
 .specialization-heading{
@@ -157,12 +157,12 @@ body {
   .specialization-child{
     border-radius: 20px;
     background-color: blueviolet;
-    padding: 9px 0px;
+    padding: 9px 4px;
     margin-top: -9px;
   }
   .specialization-nav li{
     margin-right: 15px;
-    text-align: center;
+    
   }
   .specialization-nav {
     margin-right: 5px;
@@ -172,11 +172,11 @@ body {
   .specialization-nav a {
     text-decoration: none;
     color: white;
-    font-weight: bold;
-    padding: 10px 20px;
-    font-size: 18px;
     font-weight: 500;
-    text-align: center;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: 500;
+    
   } 
   .specialization-images-up{
     display: flex;
@@ -226,9 +226,9 @@ body {
     background-color: #f4effe;
     position:absolute;
     margin-left: 50px;
-    width: 33%;
+    width: 30%;
     padding: 3px;
-    margin-top: -140px;
+    margin-top: -190px;
     margin-bottom: 50px;
     border-radius: 20px;
     background-color: cadetblue;
