@@ -946,7 +946,7 @@ a:hover {
     .header-2 ul li a:hover {
       background-color: #ddd;
     }
-  }
+  
   .profile{
       width: 100%;
       margin: 0 auto;
@@ -1123,5 +1123,6 @@ a:hover {
     margin: 0 auto;
     margin-top: -20px;
   }
+}
 
 
