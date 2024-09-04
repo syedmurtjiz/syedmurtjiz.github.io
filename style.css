@@ -967,6 +967,8 @@ a:hover {
     border: 3px solid purple;
     width: 380px;
     margin: 0 auto;
+    margin-top:20px;
+    margin-left: 20px;
 
   }
   .profile-2{
@@ -1328,7 +1330,7 @@ a:hover {
   
   .edustyle::before {
     content: "";
-    height: 7%;
+    height: 8%;
     width: 2px;
     position: absolute;
     background-color: whitesmoke;
@@ -1381,7 +1383,7 @@ a:hover {
     width: 100%;
     margin: 0 auto;
     background-image: linear-gradient(to bottom, #6c5ce7, #000000);
-    
+    margin-top: 20px;
     
   }
   .footer-tag-1 a {
