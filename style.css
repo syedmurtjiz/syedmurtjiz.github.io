@@ -844,7 +844,7 @@ a:hover {
 }
 
 /* Media Query for Mobile Devices */
-@media only screen and (min-width: 412px){
+@media only screen and (max-width: 412px){
   .body{
     width: 100%;
     margin: 0 auto;
