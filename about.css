@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+     background-color: black;
     color: #333;
     margin: 0;
     padding: 0;
@@ -569,138 +569,138 @@ body {
         text-align: center;
         font-size: 60px;
         color: rgb(184, 123, 241);
-      }
-      .content-left-heading {
+    }
+    .content-left-heading {
         color:#6c5ce7;
         font-size: 40px;
         font-weight: 700px;
-      }
-      .content-right-heading {
+    }
+    .content-right-heading {
         color:#6c5ce7;
         font-size: 40px;
         font-weight: 700px;
-      }
-      .content-body {
-       
+    }
+    .content-body {
+
         justify-content: space-around;
         margin-left: 60px;
-      }
-      .education h3 {
+    }
+    .education h3 {
         color: white;
         font-size: 40px;
         font-weight: 500;
-      }
-      .education h2 {
-       font-size: 40px;
+    }
+    .education h2 {
+        font-size: 40px;
         font-weight: 800px;
-      }
-      .education p {
+    }
+    .education p {
         color: #e7e6e9;
         font-size: 35px;
         font-weight: 500px;
-      }
-      .work h3 {
+    }
+    .work h3 {
         color: #e6cffc;
         font-size: 40px;
         font-weight: 500;
-      }
-      .work h2 {
+    }
+    .work h2 {
         font-size: 40px;
-         font-weight: 800px;
-       }
-       .work p {
+        font-weight: 800px;
+    }
+    .work p {
         font-size: 35px;
-         font-weight: 800px;
-       }
+        font-weight: 800px;
+    }
 
-       .edustyle h3::before {
+    .edustyle h3::before {
         margin-left: -114px;
-   
-      }
 
-      .edustyle::before {
-               margin-left: -110px;
-               height: 238px;
-               width: 2px;
-       
-      }
+    }
 
-      .fa-solid, .fas {
+    .edustyle::before {
+        margin-left: -110px;
+        height: 238px;
+        width: 2px;
+
+    }
+
+    .fa-solid, .fas {
         font-size: 50px;
 
     }
     .fa-solid, .fas {
         font-weight: 900;
-      }
-      .skills {
+    }
+    .skills {
         width: 1100px;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 20px;
-      }
-      
-      .skills-1 {
+    }
+
+    .skills-1 {
         width: 100%;
         text-align: center;
-      }
-      
-      .skills-1 h2 {
+    }
+
+    .skills-1 h2 {
         font-size: 80px;
         color: #e1d3fd;
-      }
-      
-      .skills-1 p {
+    }
+
+    .skills-1 p {
         font-size: 46px;
         font-weight: 490;
         color: whitesmoke;
-      }
-      
-      .skills-2 {
+    }
+
+    .skills-2 {
         display: flex;
         flex-wrap: wrap;
         margin-left: 40px;
-      }
-      
-      .skills-image {
+    }
+
+    .skills-image {
         width: calc(33.33% - 20px);
         margin: 0px auto;
         margin-right: 30px;
-      }
-      
-      .skills-image img {
+    }
+
+    .skills-image img {
         width: 180px;
         height: 128px;
         border: 3px solid purple;
         padding: 20px 18px 65px 18px;
         background-color: #140c1c;
         border-radius: 20px;
-      }
-      
-      .skills-image h2 {
+    }
+
+    .skills-image h2 {
         margin-top: -58px;
         font-size: 47px;
         color: aliceblue;
         margin-left: 55px;
-      }
-      
-      .skills-image p {
+    }
+
+    .skills-image p {
         margin-left: 45px;
         font-weight: 600;
         font-size: 40px;
         color: whitesmoke;
-      }
-      
-    
-      .skills-image:nth-child(3n+1) {
-        margin-right: 0;
-      }
-      
-      .skills-image:nth-child(n+4) {
-        margin-top: 30px;
-      }
+    }
 
-      .experience-up{
+
+    .skills-image:nth-child(3n+1) {
+        margin-right: 0;
+    }
+
+    .skills-image:nth-child(n+4) {
+        margin-top: 30px;
+    }
+
+    .experience-up{
         width: 100%;
         margin: 0 auto;
         display: flex;
@@ -708,66 +708,68 @@ body {
         justify-content: space-around;
         margin-bottom: 20px;
         border: 3px solid purple;
-      }
-      .experience-body {
+    }
+    .experience-body {
         width: calc(28% );
-        
-      }
-      .experience-body h3 {
+
+    }
+    .experience-body h3 {
         font-size: 60px;
         font-weight: 800;
         color: white;
-      }
-      .experience-body p {
+    }
+    .experience-body p {
         font-size: 40px;
         font-weight: 800;
         color: rgb(243, 28, 160);
-      }
-      .experience-bottom p {
+    }
+    .experience-bottom p {
         font-size: 46px;
-       
-      }
-      .experience-bottom-anchor {
+
+    }
+    .experience-bottom-anchor {
         text-align: -moz-right;
         margin-top: -103px;
         margin-right: 40px;
-      }
-      .experience-bottom a {
+    }
+    .experience-bottom a {
         font-size: 45px;
         font-weight: 600;
         color:darkcyan;
-      }
+    }
 
-      .footer{
+    .footer{
         width: 1100px;
         margin: 0 auto;
         background-image: linear-gradient(to bottom, #6c5ce7, #000000);
         margin-top: 20px;
-        
-      }
-      .footer-tag-1 a {
+
+    }
+    .footer-tag-1 a {
         text-decoration: none;
         color: whitesmoke;
         font-size: 30px;
         font-weight: 600;
-      }
-      .footer-logo img {
+    }
+
+    .footer-logo img {
         width: 87px;
         margin-bottom: 10px;
         margin-top: 20px;
         height: 110px;
-      }
-    
-      .junction p {
+    }
+
+    .junction p {
         color: rgb(199, 155, 232);
         font-size: 33px;
-      }
-      .junction a {
-    
-        color: rgb(255, 255, 255);
-      
-        font-size: 33px;
-      
-      }
-    
     }
+
+    .junction a {
+
+        color: rgb(255, 255, 255);
+
+        font-size: 33px;
+
+    }
+
+}
