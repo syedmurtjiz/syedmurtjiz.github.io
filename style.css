@@ -807,7 +807,7 @@ a:hover {
 .footer-logo {
   display: flex;
   justify-content: center;
-  
+
 
 }
 
@@ -820,7 +820,7 @@ a:hover {
 .footer-tag {
   display: flex;
   justify-content: center;
-  
+
 }
 
 .footer-tag-1 {
@@ -836,7 +836,7 @@ a:hover {
 .junction {
   display: flex;
   justify-content: center;
-  
+
 }
 
 .junction p {
@@ -844,153 +844,139 @@ a:hover {
 }
 
 /* Media Query for Mobile Devices */
-@media only screen and (max-width: 412px){
-  .body{
-    width: 100%;
-    margin: 0 auto;
-    background-image: linear-gradient(to bottom, #000000, #c5b7ba);
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+@media only screen and (max-width: 412px) {
+
+
   .main {
-    width: 100%;
     margin: 0 auto;
-    margin-left: 10px;
-    background-image: linear-gradient(to bottom, #000000, #5c0011);   
+    background-image: linear-gradient(to bottom, #000000, #5c0011);
+
   }
 
   .header {
-    width: 100%;
     margin: 0 auto;
-    flex-direction: row-reverse; 
-    align-items: flex-start;
     background-image: linear-gradient(to bottom, #6c5ce7, #000000);
-    position: fixed;
-    top: 0; 
-    left: 0; 
-    
-    }
-
-  .header-1 {
-    margin-left: -30px;
-    flex-direction: row;
-    align-items: flex-start;
-    margin-top: 25px;
-    
+    margin-bottom: 20px;
   }
 
+
   .header-1 img {
-    width: 60px; 
+    width: 60px;
   }
 
   .header-1 h2 {
-      font-size: 40px;
-      margin-right: 55px;
-      margin-top: 8px;
-    
-    }
-    .header-2{
-      margin-top: 15px;
-    }
-    .header-2 ul {
-      display: none; 
-      padding: 0;
-      margin: 0;
-    }
-  
-    
-    .header-2::before {
-      content: '\2630';
-      display: flex; 
-      align-items: center;
-      background-image: linear-gradient(to bottom, #6c5ce7, #000000); 
-      color: white;
-      padding: 16px;
-      text-align: center;
-      cursor: pointer;
-      border-radius: 5px;
-      position: relative;
-      font-size: 20px;
-      width: 50px;
-      font-size: 50px;
-      margin-left: 10px;
-    }
-  
-    
-    .header-2::after {
-      content: ''; 
-      margin-left: 8px; 
-      font-size: 30px;
-    }
-  
-    
-    .header-2:hover ul {
-      display: block; 
-      position: absolute;
-      background-color: #f9f9f9;
-      width: 100%;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-    }
-  
-    .header-2 ul li {
-      display: block;
-      padding: 12px 16px;
-      
-    }
-  
-    .header-2 ul li a {
-      color: black;
-      text-decoration: none;
-      display: block;
-    }
-  
-    .header-2 ul li a:hover {
-      background-color: #ddd;
-    }
-  
-  .profile{
-      width: 100%;
-      height: 57%;
-      margin: 0 auto;
-      flex-direction: column; 
-      align-items: flex-start;
-      margin-top: 15px;
-      margin-bottom: 20px;
-      margin-top: 160px;
-      border:3px solid purple;  
+    font-size: 20px;
+    margin-right: 10px;
+
+
   }
 
-  .profile-1 img{
+  .header-2 {
+    margin-top: 15px;
+  }
+
+  .header-2 ul {
+    display: none;
+    padding: 0;
+    margin: 0;
+  }
+
+
+  .header-2::before {
+    content: '\2630';
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #6c5ce7, #000000);
+    color: white;
+    padding: 16px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    font-size: 20px;
+    width: 42px;
+    font-size: 34px;
+    margin-left: 10px;
+    margin-right: 20px;
+    text-align: center;
+    justify-content: center;
+    height: 50px;
+  }
+
+
+  .header-2::after {
+    content: '';
+    margin-left: 8px;
+    font-size: 30px;
+  }
+
+
+  .header-2:hover ul {
+    display: block;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .header-2 ul li {
+    display: block;
+    padding: 12px 16px;
+
+  }
+
+  .header-2 ul li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+  }
+
+  .header-2 ul li a:hover {
+    background-color: #ddd;
+  }
+
+  .profile {
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border: 3px solid purple;
+  }
+
+  .profile-1 img {
     border: 3px solid purple;
     width: 380px;
     margin: 0 auto;
-    margin-top:20px;
+    margin-top: 20px;
     margin-left: 20px;
 
   }
-  .profile-2{
-    margin: 0 auto;
+
+  .profile-2 {
+    margin-bottom: 30px;
   }
+
   .profile-2 h1 {
     font-weight: 600;
     font-size: 70px;
     color: #905ef8;
-    
+
   }
+
   .profile-2 p {
     font-size: 40px;
   }
+
   .profile-2 button {
     background-color: #5a3f91;
     border-radius: 15px;
-   height: 70px;
-   width: 210px;
-   border: 3px solid purple;
+    height: 70px;
+    width: 210px;
+    border: 3px solid purple;
   }
+
   .profile-2 a {
     text-decoration: none;
     font-weight: bold;
@@ -998,109 +984,117 @@ a:hover {
     font-size: 34px;
     font-weight: 700;
   }
-  .profile-icons{
+
+  .profile-icons {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-left: 30px;
     margin-top: -73px;
   }
-  
-  .profile-icons i{
-  font-size: 60px;
-  width: 74px;
-  height: 61px;
-  text-align: center;
-  border: 4px solid purple;
-  border-radius: 34px;
-  padding: 5px;  
-  margin-right: 30px;
-  
+
+  .profile-icons i {
+    font-size: 60px;
+    width: 74px;
+    height: 61px;
+    text-align: center;
+    border: 4px solid purple;
+    border-radius: 34px;
+    padding: 5px;
+    margin-right: 30px;
+
   }
+
   .profile-icons i:hover {
 
     background-color: green;
-  
-    cursor: pointer;
-  
-  }
-    .achivements {
-      width: 100%;
-      margin: 0 auto;
-      display: flex;
-      flex-wrap: wrap;
-      margin-bottom: 20px;
-      border: 3px solid purple;
-    }
-    .achivement {
-      width: calc(24% );
-      
-    }
 
-    .achivement i {
-      font-size: 50px;
-    }
-    .achivement h2 {
-      font-size: 80px;
-    }
-    .achivement p {
-      font-size: 40px;
-      margin-top: -50px;
-    }
-    
-   .about{
+    cursor: pointer;
+
+  }
+
+  .achivements {
     width: 100%;
     margin: 0 auto;
-    display: block;
-    
-   }
-
-   .about-1{
-    height: 29%;
+    flex-wrap: wrap;
     margin-bottom: 20px;
     border: 3px solid purple;
   }
 
-  .about-1 h1{
+  .achivement {
+    width: calc(25%);
+
+  }
+
+  .achivement i {
+    font-size: 50px;
+  }
+
+  .achivement h2 {
+    font-size: 80px;
+  }
+
+  .achivement p {
+    font-size: 40px;
+    margin-top: -50px;
+  }
+
+  .about {
+    margin: 0 auto;
+    display: block;
+
+  }
+
+  .about-1 {
+    margin-bottom: 20px;
+    border: 3px solid purple;
+  }
+
+  .about-1 h1 {
     font-size: 57px;
     text-align: center;
     font-weight: 704;
     text-align: center;
   }
 
-  .about-1 p{
+  .about-1 p {
     color: whitesmoke;
     font-size: 40px;
     font-weight: 500;
   }
+
   .about-1 a {
-    background-color: blueviolet;
-    text-decoration: none;
-    border-radius: 20px;
-    padding: 12px 25px;
-    color: white;
-    font-weight: 700;
-    font-size: 34px;
+    display: inline-block;
+    width: 249px;
+    height: 56px;
+    font-size: 39px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0px;
   }
 
-  .about-2{
-  margin-left: 0px;
-  border: 3px solid purple;
-  margin-bottom: 20px;  
-}
-  .about-2 img{
+
+  .about-2 {
+    margin-left: 0px;
+    border: 3px solid purple;
+    margin-bottom: 20px;
+  }
+
+  .about-2 img {
     width: 100%;
   }
 
-  .about-2 h2{
-  font-size: 57px;
-  font-weight: 705;
-  text-align: center;
+  .about-2 h2 {
+    font-size: 57px;
+    font-weight: 705;
+    text-align: center;
   }
-  .about-2 p{
+
+  .about-2 p {
     font-size: 50px;
     font-weight: 700;
-    }
+  }
+
   .skills {
     width: 100%;
     margin: 0 auto;
@@ -1108,26 +1102,32 @@ a:hover {
     flex-wrap: wrap;
     margin-bottom: 20px;
   }
-    .skills-1{
+
+  .skills-1 {
     text-align: center;
   }
+
   .skills-1 h2 {
     font-size: 70px;
     color: #e1d3fd;
   }
-  .skills-1 p{
+
+  .skills-1 p {
     font-size: 46px;
     font-weight: 490;
     color: whitesmoke;
   }
+
   .skills-2 {
     flex-wrap: wrap;
     margin-left: 40px;
   }
+
   .skills-image {
     width: calc(33.33% - 20px);
     margin: 0px auto;
   }
+
   .skills-image img {
     width: 180px;
     height: 128px;
@@ -1137,58 +1137,69 @@ a:hover {
     background-color: #140c1c;
     border-radius: 20px;
   }
+
   .skills-image h2 {
     margin-top: -58px;
     font-size: 47px;
     color: aliceblue;
     margin-left: 55px;
   }
+
   .skills-image p {
     margin-left: 45px;
     font-weight: 600;
     font-size: 40px;
     color: whitesmoke;
   }
-  .recent-projects{
+
+  .recent-projects {
     width: 100%;
     margin: 0 auto;
     margin-bottom: 20px;
   }
+
   .recent-projects-head {
     font-size: 45px;
     font-weight: 300;
     color: #e1d3fd;
     text-align: center;
   }
-  .recent-projects-main{
+
+  .recent-projects-main {
     display: flex;
     flex-wrap: wrap-reverse;
     border: 3px solid purple;
   }
-  .recent-projects-1{
+
+  .recent-projects-1 {
     margin-top: -20px;
   }
+
   .recent-projects-left {
-   
+
     margin-left: 20px;
   }
-  .recent-projects-1 h2{
+
+  .recent-projects-1 h2 {
     font-size: 59px;
     font-weight: 700;
-    color:whitesmoke;
+    color: whitesmoke;
   }
-  .recent-projects-1 a{
+
+  .recent-projects-1 a {
     font-size: 45px;
-    color:#a883f9;
+    color: #a883f9;
     font-weight: 700;
   }
+
   .recent-projects-1 p {
     text-decoration: none;
     font-size: 40px;
     font-weight: 300;
     color: whitesmoke;
   }
-  .recent-projects-2 a{
+
+  .recent-projects-2 a {
     color: whitesmoke;
     background-color: #422b74;
     padding: 12px;
@@ -1196,61 +1207,72 @@ a:hover {
     font-weight: 600;
     margin-right: 30px;
   }
-  .recent-projects-2 a:hover{
+
+  .recent-projects-2 a:hover {
     color: #a894bd;
     background-color: #10171c;
 
   }
+
   .recent-projects-2 p {
     color: whitesmoke;
     font-size: 40px;
     font-weight: 500;
   }
-  .recent-projects-3-left img{
+
+  .recent-projects-3-left img {
     height: 140px;
     width: 135px;
   }
+
   .recent-projects-3-right h3 {
     color: white;
     font-weight: 250;
     font-size: 30px;
   }
+
   .recent-projects-3-right p {
     color: grey;
     font-weight: 250;
     font-size: 30px;
     margin-top: -8px;
   }
-  .recent-projects-right img{
+
+  .recent-projects-right img {
     width: 100%;
   }
 
-  .specialization{
+  .specialization {
     width: 100%;
     margin: 0 auto;
-    
+
   }
+
   .specialization-heading {
     color: #e1d3fd;
     font-size: 40px;
     font-weight: 600;
     text-align: center;
   }
-  .specialization-up{
+
+  .specialization-up {
     display: block;
-    
+
   }
+
   .specialization-up-icon {
     background-color: #3f384c;
     color: white;
     text-align: center;
   }
+
   .specialization-up-icon i {
     border-radius: 6px;
     background-color: #6d3fca;
     padding: 12px;
     font-size: 80px;
   }
+
   .specialization-1 {
     border: 3px solid purple;
     background-color: #000000;
@@ -1260,6 +1282,7 @@ a:hover {
     height: 490px;
     text-align: center;
   }
+
   .specialization-up a {
     color: #ffffff;
     text-decoration: none;
@@ -1267,75 +1290,88 @@ a:hover {
     font-weight: 600;
     text-align: center;
   }
+
   .specialization-up p {
     color: #ffffff;
     font-size: 50px;
     font-weight: 500;
     margin-bottom: 15px;
   }
+
   .specialization-up span {
     color: #ffffff;
     font-size: 40px;
     font-weight: 600;
     text-decoration: underline;
   }
-  
+
   .specialization-down a {
     color: #ffffff;
     text-decoration: none;
     font-size: 70px;
     font-weight: 600;
   }
+
   .specialization-down p {
     color: #ffffff;
     font-size: 50px;
     font-weight: 490;
   }
+
   .specialization-down span {
     color: #ffffff;
     font-size: 40px;
     font-weight: 600;
     text-decoration: underline;
   }
-  .specialization-1:hover{
+
+  .specialization-1:hover {
     background-color: #140c1c;
     color: whitesmoke;
   }
-  .specialization-down{
+
+  .specialization-down {
     display: block;
-    
+
   }
-  .learning{
+
+  .learning {
     width: 100%;
-    
+
   }
+
   .learning-head {
     font-size: 40px;
     text-align: center;
     font-weight: 500;
     color: #e1d3fd;
   }
+
   .learning-1 h2 {
     color: #e1d3fd;
     font-size: 40px;
     font-weight: 600;
   }
+
   .learning-2 h2 {
     color: #e1d3fd;
     font-size: 40px;
     font-weight: 600;
   }
+
   .learning-3 h2 {
     color: #e1d3fd;
     font-size: 40px;
     font-weight: 600;
   }
-  .learning-body{
+
+  .learning-body {
     width: 100%;
     display: block;
     border: 3px solid purple;
     background-color: #000000;
   }
+
   .edustyle h3::before {
     content: "";
     height: 13px;
@@ -1346,106 +1382,121 @@ a:hover {
     border-radius: 20px;
     background-color: whitesmoke;
   }
-  
+
   .edustyle::before {
     content: "";
-    height: 17%;
+    height: 35%;
     width: 2px;
     position: absolute;
     background-color: whitesmoke;
     margin-left: -20px;
     margin-top: 8px;
   }
-  
+
   .education-2::before {
     height: 0px;
   }
-  
+
   .experience:last-child::before,
   .past-role:last-child::before {
     height: 0px;
   }
+
   .education-1 h3 {
     font-size: 40px;
     font-weight: 500;
     color: white;
   }
+
   .education-1 h5 {
     font-size: 40px;
     font-weight: 500;
     color: white;
   }
+
   .education-1 span {
     font-size: 40px;
     font-weight: 500;
     color: white;
   }
+
   .education-2 h3 {
     font-size: 40px;
     font-weight: 500;
     color: white;
   }
+
   .education-2 h3 {
     font-size: 40px;
     font-weight: 500;
     color: white;
   }
+
   .education-2 span {
     font-size: 40px;
     font-weight: 500;
     color: white;
   }
+
   .experience h3 {
     font-size: 40px;
     font-weight: 500;
     color: white;
   }
+
   .experience h5 {
     font-size: 40px;
     font-weight: 500;
     color: white;
   }
+
   .experience span {
     font-size: 40px;
     font-weight: 500;
     color: white;
   }
+
   .past-role h3 {
     font-size: 40;
     font-weight: 500;
     color: white;
   }
+
   .past-role h5 {
     font-size: 40;
     font-weight: 500;
     color: white;
-    
+
   }
+
   .past-role span {
     font-size: 40;
     font-weight: 500;
     color: white;
     margin-top: -10px;
   }
+
   .education-2 h5 {
     font-size: 40px;
     font-weight: 500;
     color: white;
     margin-top: -10px;
   }
-  
-  .info{
+
+  .info {
     margin: -25px;
   }
-  .info h3{
+
+  .info h3 {
     font-size: 30px;
   }
-  .work-togather{
-    width: 100%;
-    height: 70%;
+
+  .work-togather {
+
     border: 3px solid purple;
- 
+
   }
+
   .form-1 input {
     background-color: #10171c;
     color: whitesmoke;
@@ -1458,6 +1509,7 @@ a:hover {
     font-weight: 500;
     color: #f0bff0;
   }
+
   .message {
     width: 450px;
     height: 110px;
@@ -1467,41 +1519,68 @@ a:hover {
     color: #f0bff0;
     border: none;
   }
+
+  .work-togather-head {
+    margin: 0 auto;
+  }
+
   .work-togather-head h2 {
-    font-size: 50px;
+    font-size: 70px;
     font-weight: 700;
     color: #e1d3fd;
-  }  
-  
+    text-align: center;
+  }
+
   .work-togather-head p {
-    font-size: 33px;
+    text-align: center;
+    font-size: 39px;
     font-weight: 400;
-    color: #ffffff;
+    color: #905ef8;
   }
+
+  .work-togather-button button{
+      display: block;
+      width: 229px;
+      padding: 0px;
+      height: 48px;
+      text-align: center;
+      font-size: 26px;
+      border: none;
+    
+  }
+  .info {
+    margin: 0 auto;
+  }
+
+  .info h3 {
+    font-size: 42px;
+  }
+
   .info a {
-    color: whitesmoke;
-    font-weight: 500;
-    font-size: 18;
-    font-size: 35px;
+    font-size: 50px;
+    font-weight: 300;
   }
-  .work-togather-body{
-    width: 100%;
+
+  .work-togather-body {
     display: flex;
     flex-wrap: wrap-reverse;
   }
-  .footer{
-    width: 100%;
+
+  .footer {
+    width: 1100px;
     margin: 0 auto;
     background-image: linear-gradient(to bottom, #6c5ce7, #000000);
     margin-top: 20px;
-    
+
   }
+
   .footer-tag-1 a {
     text-decoration: none;
     color: whitesmoke;
     font-size: 30px;
     font-weight: 600;
   }
+
   .footer-logo img {
     width: 87px;
     margin-bottom: 10px;
@@ -1513,14 +1592,13 @@ a:hover {
     color: rgb(199, 155, 232);
     font-size: 33px;
   }
+
   .junction a {
 
     color: rgb(255, 255, 255);
-  
+
     font-size: 33px;
-  
+
   }
-  
+
 }
-
-
