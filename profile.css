@@ -168,7 +168,18 @@ body {
     margin-right: 5px;
     margin-bottom: 30px;
   }
-  
+  .specialization-image-left img{
+    width: 550px;
+    height: 31.5rem;
+  }
+  .specialization-image-right img{
+    width: 550px;
+    height: 31.5rem;
+  }
+  .specialization-image-down img{
+    width: 550px;
+    height: 31.5rem;
+  }
   .specialization-nav a {
     text-decoration: none;
     color: white;
@@ -220,6 +231,8 @@ body {
   }
   .specialization-image-down-right img{
     border-radius: 20px;
+    width: 550px;
+    height: 31.5rem;
   }
 
   .specialization-images-up-button{

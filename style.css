@@ -110,6 +110,7 @@ body {
   border-radius: 15px;
   padding: 10px 30px;
   margin-top: 2px;
+  border: none;
 }
 
 .profile-2 a {
@@ -157,7 +158,12 @@ body {
   border-radius: 15px;
   margin-right: 20px;
 }
-
+.achive h1{
+  color: #e1d3fd;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
 .achivements {
   width: 1100px;
   margin: 0 auto;
@@ -174,10 +180,14 @@ body {
   height: 40px;
   width: 40px;
 }
-
+.achivement h3{
+  margin-left: -2rem;
+  font-size: 1.5rem;
+}
 .achivement i {
+  margin-top: 2rem;
   font-size: 40px;
-  ;
+ 
 }
 
 .fa-suitcase {
@@ -197,15 +207,15 @@ body {
 
 
 .achivement {
-  padding: 20px 50px;
-  margin-top: 20px;
-  color: rgb(255, 255, 255);
 
+  color: rgb(255, 255, 255);
+  height: 14rem;
 }
 
 .achivement h2 {
   font-weight: bold;
   font-size: xx-large;
+  margin-left: -1.5rem;
 }
 
 .about {
@@ -312,7 +322,7 @@ body {
 }
 
 .skills-image p {
-  margin-left: 0px;
+  margin-left: 3rem;
   margin-top: 35px;
   font-weight: 300;
   font-size: 20;
@@ -325,12 +335,15 @@ body {
   margin-bottom: 20px;
 
 }
-
+.recent-projects-5 img{
+  width: 100%;
+}
 .recent-projects-head {
   font-size: 30;
   font-weight: 300;
   margin-bottom: 30px;
   color: #e1d3fd;
+  text-align: center;
 }
 
 .recent-projects-main {
@@ -339,7 +352,12 @@ body {
   background-color: #140c1c;
   display: flex;
 }
-
+.recent-projects-3 img {
+  width: 14%;
+  border: 2px solid;
+  border-radius: 37px;
+  height: 66px;
+}
 .recent-projects-left {
   padding: 30px 20px;
   margin-left: 20px;
@@ -356,6 +374,7 @@ body {
   text-decoration: none;
   font-size: 35;
   font-weight: 700;
+  color:papayawhip;
 
 }
 
@@ -387,14 +406,12 @@ body {
 }
 
 .recent-projects-3 {
-  display: flex;
   margin: 0 auto;
 }
 
 .recent-projects-3-right {
-
-  margin-left: 30px;
-  margin-top: -15px;
+  margin-left: 5rem;
+  margin-top: -5rem;
 }
 
 .recent-projects-3-right h3 {
@@ -426,6 +443,7 @@ body {
   color: #e1d3fd;
   font-size: 22;
   font-weight: 300;
+  text-align: center;
 }
 
 .specialization-up {
@@ -520,11 +538,11 @@ body {
   border-radius: 20px;
   border: 2px solid #905ef8;
   display: flex;
-  margin-right: 20px;
+  justify-content: center;
 }
 
 .learning-1 {
-  padding: 10px 50px;
+  margin-left: 2rem;
 }
 
 .learning-1 h2 {
@@ -535,12 +553,10 @@ body {
 
 .education-1 {
   color: #bebdbf;
-  margin-left: 20px;
-  margin-bottom: 35px;
 }
 
 .education-1 h3 {
-  font-size: 22;
+  font-size: 18;
   font-weight: 500;
   color: white;
 }
@@ -551,19 +567,19 @@ body {
   width: 13px;
   position: absolute;
   margin-left: -25px;
-  margin-top: 7px;
+  margin-top: 1px;
   border-radius: 20px;
   background-color: whitesmoke;
 }
 
 .edustyle::before {
   content: "";
-  height: 31%;
+  height: 19%;
   width: 1px;
   position: absolute;
   background-color: whitesmoke;
   margin-left: -20px;
-  margin-top: 8px;
+  margin-top: 1px;
 }
 
 .education-2::before {
@@ -576,45 +592,46 @@ body {
 }
 
 .education-1 h5 {
-  font-size: 18;
+  font-size: 15;
   font-weight: 250;
   color: white;
 }
 
 .education-1 span {
-  font-size: 17;
+  font-size: 15;
   font-weight: 200;
   color: white;
 }
 
 .education-2 {
   color: #bebdbf;
-  margin-left: 20px;
-  margin-top: -13px;
+
 }
 
 .education-2 h3 {
-  font-size: 22;
+  font-size: 18;
   font-weight: 500;
   color: white;
 }
 
 .education-2 h5 {
-  font-size: 18;
+  font-size: 15;
   font-weight: 250;
   color: white;
 }
 
 .education-2 span {
-  font-size: 17;
+  font-size: 15;
   font-weight: 200;
   color: white;
 }
 
 .learning-2 {
-  padding: 10px 50px;
+  margin-left: 2rem;
 }
-
+.learning-head{
+  text-align: center;
+}
 .learning-2 h2 {
   color: #e1d3fd;
   font-size: 25;
@@ -634,25 +651,25 @@ body {
 }
 
 .experience h3 {
-  font-size: 22;
+  font-size: 18;
   font-weight: 500;
   color: white;
 }
 
 .experience h5 {
-  font-size: 18;
+  font-size: 15;
   font-weight: 250;
   color: white;
 }
 
 .experience span {
-  font-size: 17;
+  font-size: 15;
   font-weight: 200;
   color: white;
 }
 
 .learning-3 {
-  padding: 10px 50px;
+margin-left: 2rem;
 }
 
 .past-role {
@@ -667,13 +684,13 @@ body {
 }
 
 .past-role h3 {
-  font-size: 22;
-  font-weight: 500;
+  font-size: 18;
+  font-weight: 700;
   color: white;
 }
 
 .past-role h5 {
-  font-size: 18;
+  font-size: 15;
   font-weight: 250;
   color: white;
 }
@@ -785,11 +802,13 @@ a:hover {
 
 .work-togather-button button {
   background-color: #502d9b;
-  padding: 5px 10px;
+  height: 2rem;
+  width: 10rem;
   border-radius: 15px;
   color: whitesmoke;
-  font-size: 15;
+  font-size: 18;
   font-weight: 700;
+  border: none;
 
 }
 
@@ -1403,7 +1422,7 @@ a:hover {
     position: absolute;
     background-color: whitesmoke;
     margin-left: -20px;
-    margin-top: 13px;
+    margin-top: 0px;
   }
 
   .education-2::before {
@@ -1417,7 +1436,7 @@ a:hover {
 
   .education-1 h3 {
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 700;
     color: white;
   }
 

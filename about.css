@@ -186,22 +186,21 @@ body {
 
 .edustyle h3::before {
     content: "";
-    height: 13px;
-    width: 13px;
+    height: 18px;
+    width: 18px;
     position: absolute;
     margin-left: -80px;
     margin-top: 7px;
-    border-radius: 20px;
+    border-radius: 26px;
     background-color: whitesmoke;
 }
-
 .edustyle::before {
     content: "";
     height: 125px;
     width: 1px;
     position: absolute;
     background-color: whitesmoke;
-    margin-left: -75px;
+    margin-left: -30px;
     margin-top: 8px;
 
 }
