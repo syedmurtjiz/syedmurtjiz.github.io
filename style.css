@@ -161,7 +161,7 @@ body {
 .achive h1{
   color: #e1d3fd;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 35px;
   font-weight: 700;
 }
 .achivements {
@@ -169,6 +169,7 @@ body {
   margin: 0 auto;
   border: 1px solid #573f86;
   border-radius: 10px;
+  padding-bottom: 15px;
   display: flex;
   justify-content: space-around;
   background-color: #140c1c;
@@ -182,7 +183,8 @@ body {
 }
 .achivement h3{
   margin-left: -2rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  text-align: center;
 }
 .achivement i {
   margin-top: 2rem;
@@ -237,14 +239,15 @@ body {
 .about-1 h1 {
 
   font-weight: bold;
-  font-size: 50;
+  font-size: 35px;
 
 }
 
 .about-1 p {
   color: #bebdbf;
   font-weight: 200;
-  font-size: 25;
+  font-size: 22px;
+  margin-bottom: 50px;
 
 }
 
@@ -264,7 +267,7 @@ body {
   border-radius: 10px;
   margin-left: 10px;
   background-color: #140c1c;
-  padding: 10px 0px 0px;
+  padding: 15px;
 }
 
 .about-2 h2 {
@@ -286,7 +289,9 @@ body {
 }
 
 .skills-1 {
-  text-align: center
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 .skills-1 h2 {
@@ -339,7 +344,7 @@ body {
   width: 100%;
 }
 .recent-projects-head {
-  font-size: 30;
+  font-size: 22px;
   font-weight: 300;
   margin-bottom: 30px;
   color: #e1d3fd;
@@ -596,6 +601,8 @@ margin-left: 3rem;
   font-size: 18;
   font-weight: 250;
   color: white;
+  margin: 10px 0px;
+  opacity: 0.6;
 }
 
 .education-1 span {
@@ -661,6 +668,8 @@ margin-left: 3rem;
   font-size: 18;
   font-weight: 250;
   color: white;
+  margin: 10px 0px;
+  opacity: 0.6;
 }
 
 .experience span {
@@ -694,6 +703,8 @@ margin-left: 3rem;
   font-size: 18;
   font-weight: 250;
   color: white;
+  margin: 10px 0px;
+  opacity: 0.6;
 }
 
 .past-role span {
