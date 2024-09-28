@@ -122,8 +122,8 @@ body {
 .profile-icons {
   display: flex;
   justify-content: center;
-  margin-top: -35px;
-  margin-left: -40px;
+  margin-top: -2rem;
+  margin-left: 10rem;
 
 }
 
@@ -535,6 +535,7 @@ body {
 
 .learning-body {
   width: 1100px;
+  height: 680px;
   border-radius: 20px;
   border: 2px solid #905ef8;
   display: flex;
@@ -542,12 +543,12 @@ body {
 }
 
 .learning-1 {
-  margin-left: 2rem;
+margin-left: 3rem;
 }
 
 .learning-1 h2 {
   color: #e1d3fd;
-  font-size: 25;
+  font-size: 35;
   font-weight: 600;
 }
 
@@ -556,7 +557,7 @@ body {
 }
 
 .education-1 h3 {
-  font-size: 18;
+  font-size: 20;
   font-weight: 500;
   color: white;
 }
@@ -574,7 +575,7 @@ body {
 
 .edustyle::before {
   content: "";
-  height: 18.5%;
+  height: 21%;
   width: 1px;
   position: absolute;
   background-color: whitesmoke;
@@ -592,13 +593,13 @@ body {
 }
 
 .education-1 h5 {
-  font-size: 15;
+  font-size: 18;
   font-weight: 250;
   color: white;
 }
 
 .education-1 span {
-  font-size: 15;
+  font-size: 18;
   font-weight: 200;
   color: white;
 }
@@ -609,32 +610,32 @@ body {
 }
 
 .education-2 h3 {
-  font-size: 18;
+  font-size: 20;
   font-weight: 500;
   color: white;
 }
 
 .education-2 h5 {
-  font-size: 15;
+  font-size: 18;
   font-weight: 250;
   color: white;
 }
 
 .education-2 span {
-  font-size: 15;
+  font-size: 18;
   font-weight: 200;
   color: white;
 }
 
 .learning-2 {
-  margin-left: 2rem;
+  margin-left: 3rem;
 }
 .learning-head{
   text-align: center;
 }
 .learning-2 h2 {
   color: #e1d3fd;
-  font-size: 25;
+  font-size: 35;
   font-weight: 600;
 }
 
@@ -646,30 +647,30 @@ body {
 
 .experience {
   color: #bebdbf;
-  margin-left: 20px;
+  
 
 }
 
 .experience h3 {
-  font-size: 18;
+  font-size: 20;
   font-weight: 500;
   color: white;
 }
 
 .experience h5 {
-  font-size: 15;
+  font-size: 18;
   font-weight: 250;
   color: white;
 }
 
 .experience span {
-  font-size: 15;
+  font-size: 18;
   font-weight: 200;
   color: white;
 }
 
 .learning-3 {
-margin-left: 2rem;
+  margin-left: 3rem;
 }
 
 .past-role {
@@ -679,24 +680,24 @@ margin-left: 2rem;
 
 .learning-3 h2 {
   color: #e1d3fd;
-  font-size: 25;
+  font-size: 35;
   font-weight: 600;
 }
 
 .past-role h3 {
-  font-size: 18;
+  font-size: 20;
   font-weight: 700;
   color: white;
 }
 
 .past-role h5 {
-  font-size: 15;
+  font-size: 18;
   font-weight: 250;
   color: white;
 }
 
 .past-role span {
-  font-size: 17;
+  font-size: 18;
   font-weight: 200;
   color: white;
 }
