@@ -1,8 +1,10 @@
 body {
   background-color: black;
   background-image: linear-gradient(to right, black, rgb(56, 13, 56));
-  background-size: 200% 200%; /* Allows for a moving background */
-  animation: gradientAnimation 8s ease infinite; /* Animation for the gradient */
+  background-size: 200% 200%;
+  /* Allows for a moving background */
+  animation: gradientAnimation 8s ease infinite;
+  /* Animation for the gradient */
   color: #333;
   margin: 0;
   padding: 0;
@@ -21,7 +23,8 @@ body {
   justify-content: space-between;
   margin-top: 25px;
   margin-bottom: 40px;
-  animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+  animation: fadeIn 1s ease-in-out;
+  /* Fade-in animation */
 }
 
 .header-1 {
@@ -32,17 +35,20 @@ body {
   width: 55px;
   margin-right: 20px;
   border-radius: 25px;
-  transition: transform 0.3s; /* Image hover effect */
+  transition: transform 0.3s;
+  /* Image hover effect */
 }
 
 .header-1 img:hover {
-  transform: scale(1.1); /* Scale up the logo on hover */
+  transform: scale(1.1);
+  /* Scale up the logo on hover */
 }
 
 .header-1 h2 {
   font-size: 18px;
   color: white;
-  transition: color 0.3s; /* Text color transition */
+  transition: color 0.3s;
+  /* Text color transition */
 }
 
 .header-2 ul {
@@ -52,7 +58,8 @@ body {
 
 .header-2 li {
   margin-right: 5px;
-  position: relative; /* Position relative for the pseudo-element */
+  position: relative;
+  /* Position relative for the pseudo-element */
 }
 
 .header-2 a {
@@ -60,9 +67,12 @@ body {
   color: white;
   margin-right: 15px;
   font-weight: bold;
-  position: relative; /* Position relative for the pseudo-element */
-  overflow: hidden; /* Prevent overflow for the pseudo-element */
-  transition: color 0.3s ease; /* Text color transition */
+  position: relative;
+  /* Position relative for the pseudo-element */
+  overflow: hidden;
+  /* Prevent overflow for the pseudo-element */
+  transition: color 0.3s ease;
+  /* Text color transition */
 }
 
 .header-2 a::after {
@@ -73,17 +83,22 @@ body {
   background: #8750f7;
   left: 0;
   bottom: 0;
-  transform: scaleX(0); /* Start with no width */
-  transition: transform 0.3s ease; /* Transition for the line */
+  transform: scaleX(0);
+  /* Start with no width */
+  transition: transform 0.3s ease;
+  /* Transition for the line */
 }
 
 .header-2 a:hover::after {
-  transform: scaleX(1); /* Grow the line on hover */
+  transform: scaleX(1);
+  /* Grow the line on hover */
 }
 
 .header-2 a:hover {
-  animation: bounce 0.5s; /* Bounce effect on hover */
-  text-shadow: 0 0 5px #8750f7; /* Add a glow effect */
+  animation: bounce 0.5s;
+  /* Bounce effect on hover */
+  text-shadow: 0 0 5px #8750f7;
+  /* Add a glow effect */
 }
 
 .header-2 .back {
@@ -92,50 +107,72 @@ body {
   padding: 10px 25px;
   text-align: center;
   font-weight: bold;
-  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Transition for button */
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  /* Transition for button */
 }
 
 .header-2 .back:hover {
-  background-color: #5e3fbd; /* Darker background on hover */
-  transform: translateY(-3px) scale(1.05); /* Slight lift and scale effect on hover */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Add shadow effect on hover */
+  background-color: #5e3fbd;
+  /* Darker background on hover */
+  transform: translateY(-3px) scale(1.05);
+  /* Slight lift and scale effect on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  /* Add shadow effect on hover */
 }
 
 /* Keyframes for animations */
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(-20px); /* Start slightly above */
+    transform: translateY(-20px);
+    /* Start slightly above */
   }
+
   to {
     opacity: 1;
-    transform: translateY(0); /* End in original position */
+    transform: translateY(0);
+    /* End in original position */
   }
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0);
   }
+
   40% {
-    transform: translateY(-10px); /* Bounce up */
+    transform: translateY(-10px);
+    /* Bounce up */
   }
+
   60% {
-    transform: translateY(-5px); /* Slight bounce */
+    transform: translateY(-5px);
+    /* Slight bounce */
   }
 }
 
 @keyframes gradientAnimation {
   0% {
-    background-position: 0% 50%; /* Start position */
+    background-position: 0% 50%;
+    /* Start position */
   }
+
   50% {
-    background-position: 100% 50%; /* Middle position */
+    background-position: 100% 50%;
+    /* Middle position */
   }
+
   100% {
-    background-position: 0% 50%; /* End position */
+    background-position: 0% 50%;
+    /* End position */
   }
 }
+
 .profile {
   width: 1100px;
   margin: 0 auto;
@@ -146,15 +183,21 @@ body {
   align-items: center;
   background-color: #140c1c;
   margin-bottom: 30px;
-  opacity: 0; /* Start invisible */
-  animation: fadeIn 1s forwards; /* Fade-in animation */
-  animation-delay: 0.5s; /* Delay the fade-in */
+  opacity: 0;
+  /* Start invisible */
+  animation: fadeIn 1s forwards;
+  /* Fade-in animation */
+  animation-delay: 0.5s;
+  /* Delay the fade-in */
 }
 
 .profile-1 {
-  transform: translateZ(0); /* Enable 3D transformations */
-  animation: bounceIn 0.8s forwards; /* Bounce-in effect for the image container */
-  animation-delay: 0.5s; /* Delay for image */
+  transform: translateZ(0);
+  /* Enable 3D transformations */
+  animation: bounceIn 0.8s forwards;
+  /* Bounce-in effect for the image container */
+  animation-delay: 0.5s;
+  /* Delay for image */
 }
 
 .profile-1 img {
@@ -162,48 +205,67 @@ body {
   margin: 30px;
   border: 2px solid #6949a8;
   border-radius: 16px;
-  transition: transform 0.4s ease, filter 0.4s ease; /* Image hover effect */
+  transition: transform 0.4s ease, filter 0.4s ease;
+  /* Image hover effect */
 }
 
 .profile-1 img:hover {
-  transform: scale(1.1) rotate(5deg); /* Scale and rotate on hover */
-  filter: brightness(1.2); /* Brighten the image on hover */
-  animation: pulse 0.6s infinite; /* Pulse effect on hover */
+  transform: scale(1.1) rotate(5deg);
+  /* Scale and rotate on hover */
+  filter: brightness(1.2);
+  /* Brighten the image on hover */
+  animation: pulse 0.6s infinite;
+  /* Pulse effect on hover */
 }
 
 .profile-2 {
   margin: -30px 0px 20px 20px;
-  transform: translateZ(0); /* Enable 3D transformations */
+  transform: translateZ(0);
+  /* Enable 3D transformations */
 }
 
 .profile-2 h1 {
   font-weight: 300;
   font-size: 50px;
   color: #905ef8;
-  opacity: 0; /* Start invisible */
-  animation: slideIn 0.6s forwards, bounceIn 0.6s forwards; /* Slide-in and bounce effect */
-  animation-delay: 0.7s; /* Delay for h1 */
-  transform: translateY(-20px); /* Start slightly above */
-  transition: color 0.4s ease, transform 0.4s ease; /* Transition for hover effect */
+  opacity: 0;
+  /* Start invisible */
+  animation: slideIn 0.6s forwards, bounceIn 0.6s forwards;
+  /* Slide-in and bounce effect */
+  animation-delay: 0.7s;
+  /* Delay for h1 */
+  transform: translateY(-20px);
+  /* Start slightly above */
+  transition: color 0.4s ease, transform 0.4s ease;
+  /* Transition for hover effect */
 }
 
 .profile-2 h1:hover {
-  color: #6c4d92; /* Change color on hover */
-  transform: scale(1.05); /* Scale up on hover */
+  color: #6c4d92;
+  /* Change color on hover */
+  transform: scale(1.05);
+  /* Scale up on hover */
 }
 
 .profile-2 p {
   font-size: 22px;
-  opacity: 0; /* Start invisible */
-  animation: slideIn 0.6s forwards, bounceIn 0.6s forwards; /* Slide-in and bounce effect */
-  animation-delay: 0.9s; /* Delay for paragraph */
-  transform: translateY(-20px); /* Start slightly above */
-  transition: color 0.4s ease, transform 0.4s ease; /* Transition for hover effect */
+  opacity: 0;
+  /* Start invisible */
+  animation: slideIn 0.6s forwards, bounceIn 0.6s forwards;
+  /* Slide-in and bounce effect */
+  animation-delay: 0.9s;
+  /* Delay for paragraph */
+  transform: translateY(-20px);
+  /* Start slightly above */
+  transition: color 0.4s ease, transform 0.4s ease;
+  /* Transition for hover effect */
 }
 
 .profile-2 p:hover {
-  color: #b09ff1; /* Change color on hover */
-  transform: scale(1.05); /* Scale up on hover */
+  color: #b09ff1;
+  /* Change color on hover */
+  transform: scale(1.05);
+  /* Scale up on hover */
 }
 
 .profile-2 button {
@@ -212,15 +274,21 @@ body {
   padding: 10px 30px;
   margin-top: 2px;
   border: none;
-  transition: transform 0.3s ease, background-color 0.3s ease; /* Button transitions */
-  opacity: 0; /* Start invisible */
-  animation: popIn 0.4s forwards; /* Pop-in animation */
-  animation-delay: 1.1s; /* Delay for button */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  /* Button transitions */
+  opacity: 0;
+  /* Start invisible */
+  animation: popIn 0.4s forwards;
+  /* Pop-in animation */
+  animation-delay: 1.1s;
+  /* Delay for button */
 }
 
 .profile-2 button:hover {
-  transform: scale(1.1); /* Scale button on hover */
-  background-color: #6c4d92; /* Change color on hover */
+  transform: scale(1.1);
+  /* Scale button on hover */
+  background-color: #6c4d92;
+  /* Change color on hover */
 }
 
 .profile-2 a {
@@ -234,40 +302,61 @@ body {
   justify-content: center;
   margin-top: -2rem;
   margin-left: 10rem;
-  opacity: 0; /* Start invisible */
-  animation: fadeIn 0.5s forwards; /* Fade-in animation for icons */
-  animation-delay: 1.3s; /* Delay for icons */
+  opacity: 0;
+  /* Start invisible */
+  animation: fadeIn 0.5s forwards;
+  /* Fade-in animation for icons */
+  animation-delay: 1.3s;
+  /* Delay for icons */
 }
 
 .profile-icons a {
-  margin-right: 20px; /* Space between icons */
-  transition: transform 0.3s ease, color 0.3s ease; /* Icon transitions */
-  transform: translateY(20px); /* Start slightly below */
-  opacity: 0; /* Start invisible */
-  animation: fadeIn 0.5s forwards; /* Fade-in animation for icons */
-  animation-delay: 1.5s; /* Delay for each icon */
+  margin-right: 20px;
+  /* Space between icons */
+  transition: transform 0.3s ease, color 0.3s ease;
+  /* Icon transitions */
+  transform: translateY(20px);
+  /* Start slightly below */
+  opacity: 0;
+  /* Start invisible */
+  animation: fadeIn 0.5s forwards;
+  /* Fade-in animation for icons */
+  animation-delay: 1.5s;
+  /* Delay for each icon */
 }
 
 .profile-icons a:hover {
-  transform: scale(1.2); /* Scale up on hover */
-  color: #f2f2f2; /* Change color on hover */
+  transform: scale(1.2);
+  /* Scale up on hover */
+  color: #f2f2f2;
+  /* Change color on hover */
 }
 
 /* Individual icon hover effects for color transitions */
 .fa-twitter:hover {
-  color: #1da1f2; /* Twitter color on hover */
-}
-.fa-github:hover {
-  color: #333; /* GitHub color on hover */
-}
-.fa-linkedin-in:hover {
-  color: #0077b5; /* LinkedIn color on hover */
-}
-.fa-globe:hover {
-  color: #f68b20; /* Globe color on hover */
+  color: #1da1f2;
+  /* Twitter color on hover */
 }
 
-.fa-twitter, .fa-github, .fa-linkedin-in, .fa-globe {
+.fa-github:hover {
+  color: #333;
+  /* GitHub color on hover */
+}
+
+.fa-linkedin-in:hover {
+  color: #0077b5;
+  /* LinkedIn color on hover */
+}
+
+.fa-globe:hover {
+  color: #f68b20;
+  /* Globe color on hover */
+}
+
+.fa-twitter,
+.fa-github,
+.fa-linkedin-in,
+.fa-globe {
   color: #8750f7;
   border: 2px solid #6949a8;
   padding: 5px 5px;
@@ -277,59 +366,87 @@ body {
 /* Keyframes for animations */
 @keyframes fadeIn {
   from {
-    opacity: 0; /* Start invisible */
+    opacity: 0;
+    /* Start invisible */
   }
+
   to {
-    opacity: 1; /* End visible */
+    opacity: 1;
+    /* End visible */
   }
 }
 
 @keyframes slideIn {
   from {
-    transform: translateY(-20px); /* Start above */
-    opacity: 0; /* Start invisible */
+    transform: translateY(-20px);
+    /* Start above */
+    opacity: 0;
+    /* Start invisible */
   }
+
   to {
-    transform: translateY(0); /* End in original position */
-    opacity: 1; /* End visible */
+    transform: translateY(0);
+    /* End in original position */
+    opacity: 1;
+    /* End visible */
   }
 }
 
 @keyframes bounceIn {
-  0%, 20%, 50%, 80%, 100% {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0);
   }
+
   40% {
-    transform: translateY(-20px); /* Bounce effect */
+    transform: translateY(-20px);
+    /* Bounce effect */
   }
 }
 
 @keyframes popIn {
   from {
-    transform: scale(0.9); /* Start slightly smaller */
-    opacity: 0; /* Start invisible */
+    transform: scale(0.9);
+    /* Start slightly smaller */
+    opacity: 0;
+    /* Start invisible */
   }
+
   to {
-    transform: scale(1); /* End at original size */
-    opacity: 1; /* End visible */
+    transform: scale(1);
+    /* End at original size */
+    opacity: 1;
+    /* End visible */
   }
 }
 
 @keyframes pulse {
-  0%, 100% {
-    transform: scale(1); /* Original size */
+
+  0%,
+  100% {
+    transform: scale(1);
+    /* Original size */
   }
+
   50% {
-    transform: scale(1.05); /* Scale up slightly */
+    transform: scale(1.05);
+    /* Scale up slightly */
   }
 }
+
 .achive h1 {
   color: #e1d3fd;
   text-align: center;
   font-size: 35px;
   font-weight: 700;
-  animation: fadeIn 1s ease forwards; /* Fade in effect */
-  opacity: 0; /* Start hidden */
+  animation: fadeIn 1s ease forwards;
+  /* Fade in effect */
+  opacity: 0;
+  /* Start hidden */
 }
 
 .achivements {
@@ -348,64 +465,82 @@ body {
   color: rgb(255, 255, 255);
   height: 14rem;
   text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
-  animation: slideIn 0.5s ease forwards; /* Slide in effect */
-  opacity: 0; /* Start hidden */
+  transition: transform 0.3s, box-shadow 0.3s;
+  /* Smooth transition for hover effect */
+  animation: slideIn 0.5s ease forwards;
+  /* Slide in effect */
+  opacity: 0;
+  /* Start hidden */
 }
 
 .achivement:hover {
-  transform: scale(1.05); /* Scale up on hover */
-  box-shadow: 0 5px 20px rgba(135, 80, 247, 0.5); /* Shadow effect */
+  transform: scale(1.05);
+  /* Scale up on hover */
+  box-shadow: 0 5px 20px rgba(135, 80, 247, 0.5);
+  /* Shadow effect */
 }
 
-.fa-trophy, .fa-suitcase, .fa-bars, .fa-crown {
+.fa-trophy,
+.fa-suitcase,
+.fa-bars,
+.fa-crown {
   color: #8750f7;
   font-size: 40px;
   margin-top: 1rem;
-  animation: bounce 1s infinite; /* Add bounce effect */
+  animation: bounce 1s infinite;
+  /* Add bounce effect */
 }
 
 .achivement h3 {
   margin-left: -2rem;
   font-size: 1.3rem;
-  animation: fadeIn 1s ease forwards; /* Fade in effect for h3 */
-  opacity: 0; /* Start hidden */
+  animation: fadeIn 1s ease forwards;
+  /* Fade in effect for h3 */
+  opacity: 0;
+  /* Start hidden */
 }
 
 .achivement h2 {
   font-weight: bold;
   font-size: xx-large;
   margin-left: -1.5rem;
-  animation: fadeIn 1s ease forwards; /* Fade in effect for h2 */
-  opacity: 0; /* Start hidden */
+  animation: fadeIn 1s ease forwards;
+  /* Fade in effect for h2 */
+  opacity: 0;
+  /* Start hidden */
 }
 
 /* Keyframes for animations */
 @keyframes fadeIn {
   to {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
 @keyframes slideIn {
   from {
-      transform: translateY(20px);
-      opacity: 0;
+    transform: translateY(20px);
+    opacity: 0;
   }
+
   to {
-      transform: translateY(0);
-      opacity: 1;
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
 @keyframes bounce {
-  0%, 100% {
-      transform: translateY(0);
+
+  0%,
+  100% {
+    transform: translateY(0);
   }
+
   50% {
-      transform: translateY(-10px);
+    transform: translateY(-10px);
   }
 }
+
 .about {
   width: 1100px;
   margin: 0 auto;
@@ -419,7 +554,8 @@ body {
   background-color: #140c1c;
   padding: 15px;
   color: white;
-  overflow: hidden; /* Ensure overflow is hidden for animations */
+  overflow: hidden;
+  /* Ensure overflow is hidden for animations */
 }
 
 /* Base styles for the headings and paragraphs */
@@ -427,37 +563,49 @@ body {
 .about-2 h2,
 .about-1 p,
 .about-2 p {
-  opacity: 0; /* Start as invisible */
-  transform: translateY(20px); /* Start from below */
-  animation: fadeInUp 0.6s forwards; /* Apply animation */
+  opacity: 0;
+  /* Start as invisible */
+  transform: translateY(20px);
+  /* Start from below */
+  animation: fadeInUp 0.6s forwards;
+  /* Apply animation */
 }
 
 /* Specific delays for each line */
 .about-1 h1 {
-  animation-delay: 0.3s; /* Delay for h1 */
+  animation-delay: 0.3s;
+  /* Delay for h1 */
 }
 
 .about-1 p {
-  animation-delay: 0.6s; /* Delay for paragraph */
+  animation-delay: 0.6s;
+  /* Delay for paragraph */
 }
 
 .about-2 h2 {
-  animation-delay: 0.9s; /* Delay for h2 */
+  animation-delay: 0.9s;
+  /* Delay for h2 */
 }
 
 .about-2 p {
-  animation-delay: 1.2s; /* Delay for second paragraph */
+  animation-delay: 1.2s;
+  /* Delay for second paragraph */
 }
 
 /* Animation keyframes */
 @keyframes fadeInUp {
   0% {
-      opacity: 0; /* Start invisible */
-      transform: translateY(20px); /* Start slightly below */
+    opacity: 0;
+    /* Start invisible */
+    transform: translateY(20px);
+    /* Start slightly below */
   }
+
   100% {
-      opacity: 1; /* Fully visible */
-      transform: translateY(0); /* Original position */
+    opacity: 1;
+    /* Fully visible */
+    transform: translateY(0);
+    /* Original position */
   }
 }
 
@@ -472,9 +620,12 @@ body {
 }
 
 .about-2 img {
-  max-width: 100%; /* Responsive image */
-  border-radius: 8px; /* Rounded corners */
+  max-width: 100%;
+  /* Responsive image */
+  border-radius: 8px;
+  /* Rounded corners */
 }
+
 .skills {
   width: 1100px;
   margin: 0 auto;
@@ -487,37 +638,55 @@ body {
 }
 
 .skills-1 h2 {
-  font-size: 35px; /* Ensure the unit is specified */
+  font-size: 35px;
+  /* Ensure the unit is specified */
   color: #e1d3fd;
-  opacity: 0; /* Start hidden */
-  transform: translateY(-30px); /* Start slightly above */
-  animation: fadeInUp 0.8s forwards; /* Upward fade-in */
-  animation-delay: 0.1s; /* Delay for h2 */
+  opacity: 0;
+  /* Start hidden */
+  transform: translateY(-30px);
+  /* Start slightly above */
+  animation: fadeInUp 0.8s forwards;
+  /* Upward fade-in */
+  animation-delay: 0.1s;
+  /* Delay for h2 */
 }
 
 .skills-1 p {
-  font-size: 20px; /* Ensure the unit is specified */
+  font-size: 20px;
+  /* Ensure the unit is specified */
   color: #bebdbf;
   margin-top: -15px;
-  opacity: 0; /* Start hidden */
-  transform: translateY(-30px); /* Start slightly above */
-  animation: fadeInUp 0.8s forwards; /* Upward fade-in */
-  animation-delay: 0.4s; /* Delay for p */
+  opacity: 0;
+  /* Start hidden */
+  transform: translateY(-30px);
+  /* Start slightly above */
+  animation: fadeInUp 0.8s forwards;
+  /* Upward fade-in */
+  animation-delay: 0.4s;
+  /* Delay for p */
 }
 
 .skills-2 {
-  width: 100%; /* Full width for single line */
+  width: 100%;
+  /* Full width for single line */
   margin: 0 auto;
-  display: flex; /* Use flexbox to keep elements in a row */
-  justify-content: center; /* Center align the items */
-  flex-wrap: nowrap; /* Prevent wrapping */
+  display: flex;
+  /* Use flexbox to keep elements in a row */
+  justify-content: center;
+  /* Center align the items */
+  flex-wrap: nowrap;
+  /* Prevent wrapping */
 }
 
 .skills-image {
-  position: relative; /* For positioning the text */
-  opacity: 0; /* Start hidden */
-  transform: translateY(30px); /* Start slightly below */
-  animation: slideIn 0.6s forwards; /* Slide-in animation */
+  position: relative;
+  /* For positioning the text */
+  opacity: 0;
+  /* Start hidden */
+  transform: translateY(30px);
+  /* Start slightly below */
+  animation: slideIn 0.6s forwards;
+  /* Slide-in animation */
 }
 
 .skills-image img {
@@ -525,90 +694,127 @@ body {
   height: 70px;
   border: 1px solid blueviolet;
   padding: 20px 18px 65px 18px;
-  margin: 0 15px; /* Space between images */
+  margin: 0 15px;
+  /* Space between images */
   background-color: #140c1c;
   border-radius: 20px;
-  transition: transform 0.3s; /* Smooth scaling on hover */
+  transition: transform 0.3s;
+  /* Smooth scaling on hover */
 }
 
 .skills-image img:hover {
-  transform: scale(1.1); /* Scale up on hover */
+  transform: scale(1.1);
+  /* Scale up on hover */
 }
 
 .skills-image h2 {
   margin-top: -50px;
   margin-left: 50px;
-  color: white; /* Make sure text color contrasts with background */
-  opacity: 0; /* Start hidden */
-  animation: fadeInRight 0.8s forwards; /* Right fade-in */
-  animation-delay: 0.5s; /* Delay for h2 */
+  color: white;
+  /* Make sure text color contrasts with background */
+  opacity: 0;
+  /* Start hidden */
+  animation: fadeInRight 0.8s forwards;
+  /* Right fade-in */
+  animation-delay: 0.5s;
+  /* Delay for h2 */
 }
 
 .skills-image p {
   margin-left: 3rem;
   margin-top: 35px;
   font-weight: 300;
-  font-size: 20px; /* Ensure the unit is specified */
+  font-size: 20px;
+  /* Ensure the unit is specified */
   color: aliceblue;
-  opacity: 0; /* Start hidden */
-  transform: translateY(20px); /* Start slightly below */
-  animation: fadeInUp 0.8s forwards; /* Upward fade-in */
-  animation-delay: 0.7s; /* Delay for p */
+  opacity: 0;
+  /* Start hidden */
+  transform: translateY(20px);
+  /* Start slightly below */
+  animation: fadeInUp 0.8s forwards;
+  /* Upward fade-in */
+  animation-delay: 0.7s;
+  /* Delay for p */
 }
 
 @keyframes fadeInUp {
   to {
-    opacity: 1; /* End fully visible */
-    transform: translateY(0); /* End at original position */
+    opacity: 1;
+    /* End fully visible */
+    transform: translateY(0);
+    /* End at original position */
   }
 }
 
 @keyframes slideIn {
   to {
-    opacity: 1; /* End fully visible */
-    transform: translateY(0); /* End at original position */
+    opacity: 1;
+    /* End fully visible */
+    transform: translateY(0);
+    /* End at original position */
   }
 }
 
 @keyframes fadeInRight {
   to {
-    opacity: 1; /* End fully visible */
-    transform: translateX(0); /* End at original position */
+    opacity: 1;
+    /* End fully visible */
+    transform: translateX(0);
+    /* End at original position */
   }
 }
+
 .recent-projects {
   width: 1100px;
   margin: 0 auto;
   margin-bottom: 20px;
-  opacity: 0; /* Start invisible for animation */
-  animation: fadeIn 0.6s ease forwards; /* Fade in animation */
+  opacity: 0;
+  /* Start invisible for animation */
+  animation: fadeIn 0.6s ease forwards;
+  /* Fade in animation */
 }
 
 .recent-projects-5 img {
   width: 100%;
-  opacity: 0; /* Start invisible for animation */
-  animation: fadeIn 0.6s ease forwards, bounce 0.6s ease forwards; /* Fade in and bounce animations */
-  animation-delay: 0.1s; /* Delay for images */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth scaling and shadow on hover */
+  opacity: 0;
+  /* Start invisible for animation */
+  animation: fadeIn 0.6s ease forwards, bounce 0.6s ease forwards;
+  /* Fade in and bounce animations */
+  animation-delay: 0.1s;
+  /* Delay for images */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth scaling and shadow on hover */
 }
 
 /* Bounce effect on load */
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0); /* Normal position */
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+    /* Normal position */
   }
+
   40% {
-    transform: translateY(-10px); /* Move up */
+    transform: translateY(-10px);
+    /* Move up */
   }
+
   60% {
-    transform: translateY(-5px); /* Slightly lower than peak */
+    transform: translateY(-5px);
+    /* Slightly lower than peak */
   }
 }
 
 /* Hover effect for project images */
 .recent-projects-5 img:hover {
-  transform: scale(1.05) rotate(3deg); /* Slight scale and rotation effect on hover */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Shadow effect on hover */
+  transform: scale(1.05) rotate(3deg);
+  /* Slight scale and rotation effect on hover */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  /* Shadow effect on hover */
 }
 
 .recent-projects-head {
@@ -617,9 +823,12 @@ body {
   margin-bottom: 30px;
   color: #e1d3fd;
   text-align: center;
-  opacity: 0; /* Start invisible for animation */
-  animation: fadeIn 0.6s ease forwards; /* Fade in animation */
-  animation-delay: 0.1s; /* Slight delay for the heading */
+  opacity: 0;
+  /* Start invisible for animation */
+  animation: fadeIn 0.6s ease forwards;
+  /* Fade in animation */
+  animation-delay: 0.1s;
+  /* Slight delay for the heading */
 }
 
 .recent-projects-main {
@@ -627,8 +836,10 @@ body {
   border-radius: 15px;
   background-color: #140c1c;
   display: flex;
-  opacity: 0; /* Start invisible for animation */
-  animation: fadeIn 0.6s ease forwards; /* Fade in animation */
+  opacity: 0;
+  /* Start invisible for animation */
+  animation: fadeIn 0.6s ease forwards;
+  /* Fade in animation */
 }
 
 .recent-projects-3 img {
@@ -636,13 +847,16 @@ body {
   border: 2px solid;
   border-radius: 37px;
   height: 66px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth scaling and shadow on hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth scaling and shadow on hover */
 }
 
 /* Hover effect for project images */
 .recent-projects-3 img:hover {
-  transform: scale(1.1) rotate(2deg); /* Scale and rotate effect on hover */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Shadow effect on hover */
+  transform: scale(1.1) rotate(2deg);
+  /* Scale and rotate effect on hover */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  /* Shadow effect on hover */
 }
 
 .recent-projects-left {
@@ -652,38 +866,53 @@ body {
 
 .recent-projects-1 h2 {
   color: whitesmoke;
-  font-size: 25px; /* Note: Add px for font-size */
+  font-size: 25px;
+  /* Note: Add px for font-size */
   font-weight: 300;
   margin-bottom: 10px;
-  opacity: 0; /* Start invisible for animation */
-  animation: fadeIn 0.6s ease forwards; /* Fade in animation */
-  animation-delay: 0.2s; /* Delay for h2 heading */
+  opacity: 0;
+  /* Start invisible for animation */
+  animation: fadeIn 0.6s ease forwards;
+  /* Fade in animation */
+  animation-delay: 0.2s;
+  /* Delay for h2 heading */
 }
 
 .recent-projects-1 a {
   text-decoration: none;
-  font-size: 35px; /* Note: Add px for font-size */
+  font-size: 35px;
+  /* Note: Add px for font-size */
   font-weight: 700;
   color: papayawhip;
-  opacity: 0; /* Start invisible for animation */
-  animation: fadeIn 0.6s ease forwards; /* Fade in animation */
-  animation-delay: 0.3s; /* Delay for anchor */
-  transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and scale transition */
+  opacity: 0;
+  /* Start invisible for animation */
+  animation: fadeIn 0.6s ease forwards;
+  /* Fade in animation */
+  animation-delay: 0.3s;
+  /* Delay for anchor */
+  transition: color 0.3s ease, transform 0.3s ease;
+  /* Smooth color and scale transition */
 }
 
 .recent-projects-1 a:hover {
-  color: #905ef8; /* Change color on hover */
-  transform: scale(1.1); /* Scale effect on hover */
+  color: #905ef8;
+  /* Change color on hover */
+  transform: scale(1.1);
+  /* Scale effect on hover */
 }
 
 .recent-projects-1 p {
   text-decoration: none;
-  font-size: 18px; /* Note: Add px for font-size */
+  font-size: 18px;
+  /* Note: Add px for font-size */
   font-weight: 300;
   color: white;
-  opacity: 0; /* Start invisible for animation */
-  animation: fadeIn 0.6s ease forwards; /* Fade in animation */
-  animation-delay: 0.4s; /* Delay for paragraph */
+  opacity: 0;
+  /* Start invisible for animation */
+  animation: fadeIn 0.6s ease forwards;
+  /* Fade in animation */
+  animation-delay: 0.4s;
+  /* Delay for paragraph */
 }
 
 .recent-projects-2 {
@@ -698,14 +927,18 @@ body {
   border-radius: 18px;
   margin-right: 10px;
   padding: 8px;
-  opacity: 0; /* Start invisible for animation */
-  animation: fadeIn 0.6s ease forwards; /* Fade in animation */
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+  opacity: 0;
+  /* Start invisible for animation */
+  animation: fadeIn 0.6s ease forwards;
+  /* Fade in animation */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  /* Smooth transition for hover effects */
 }
 
 /* Animation delay for buttons */
 .recent-projects-2 a:nth-child(1) {
-  animation-delay: 0.1s; /* Adjust delay as needed */
+  animation-delay: 0.1s;
+  /* Adjust delay as needed */
 }
 
 .recent-projects-2 a:nth-child(2) {
@@ -719,9 +952,12 @@ body {
 .recent-projects-2 p {
   color: whitesmoke;
   margin-top: 40px;
-  opacity: 0; /* Start invisible for animation */
-  animation: fadeIn 0.6s ease forwards; /* Fade in animation */
-  animation-delay: 0.5s; /* Delay for paragraph */
+  opacity: 0;
+  /* Start invisible for animation */
+  animation: fadeIn 0.6s ease forwards;
+  /* Fade in animation */
+  animation-delay: 0.5s;
+  /* Delay for paragraph */
 }
 
 .recent-projects-3 {
@@ -736,20 +972,28 @@ body {
 .recent-projects-3-right h3 {
   color: white;
   font-weight: 250;
-  font-size: 17px; /* Note: Add px for font-size */
-  opacity: 0; /* Start invisible for animation */
-  animation: fadeIn 0.6s ease forwards; /* Fade in animation */
-  animation-delay: 0.3s; /* Delay for h3 heading */
+  font-size: 17px;
+  /* Note: Add px for font-size */
+  opacity: 0;
+  /* Start invisible for animation */
+  animation: fadeIn 0.6s ease forwards;
+  /* Fade in animation */
+  animation-delay: 0.3s;
+  /* Delay for h3 heading */
 }
 
 .recent-projects-3-right p {
   color: rgb(76, 76, 76);
   font-weight: 250;
-  font-size: 17px; /* Note: Add px for font-size */
+  font-size: 17px;
+  /* Note: Add px for font-size */
   margin-top: -5px;
-  opacity: 0; /* Start invisible for animation */
-  animation: fadeIn 0.6s ease forwards; /* Fade in animation */
-  animation-delay: 0.6s; /* Delay for paragraph */
+  opacity: 0;
+  /* Start invisible for animation */
+  animation: fadeIn 0.6s ease forwards;
+  /* Fade in animation */
+  animation-delay: 0.6s;
+  /* Delay for paragraph */
 }
 
 .recent-projects-right {
@@ -763,8 +1007,10 @@ body {
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(10px); /* Move slightly upwards */
+    transform: translateY(10px);
+    /* Move slightly upwards */
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -774,50 +1020,68 @@ body {
 .specialization {
   width: 1100px;
   margin: 0 auto;
-  opacity: 0; /* Initially hidden for fade-in effect */
-  animation: fadeIn 1s forwards; /* Fade-in animation for the section */
+  opacity: 0;
+  /* Initially hidden for fade-in effect */
+  animation: fadeIn 1s forwards;
+  /* Fade-in animation for the section */
 }
 
 @keyframes fadeIn {
   to {
-    opacity: 1; /* Fade to visible */
+    opacity: 1;
+    /* Fade to visible */
   }
 }
 
 .specialization-heading {
   color: #e1d3fd;
-  font-size: 22px; /* Added 'px' unit */
+  font-size: 22px;
+  /* Added 'px' unit */
   font-weight: 300;
-  opacity: 0; /* Initially hidden */
-  animation: fadeInUp 0.5s forwards; /* Fade-in with upward slide */
-  animation-delay: 0.2s; /* Delay for a staggered effect */
+  opacity: 0;
+  /* Initially hidden */
+  animation: fadeInUp 0.5s forwards;
+  /* Fade-in with upward slide */
+  animation-delay: 0.2s;
+  /* Delay for a staggered effect */
 }
 
 @keyframes fadeInUp {
   from {
-    transform: translateY(10px); /* Start slightly below */
-    opacity: 0; /* Start hidden */
+    transform: translateY(10px);
+    /* Start slightly below */
+    opacity: 0;
+    /* Start hidden */
   }
+
   to {
-    transform: translateY(0); /* End at original position */
-    opacity: 1; /* Fade in */
+    transform: translateY(0);
+    /* End at original position */
+    opacity: 1;
+    /* Fade in */
   }
 }
 
 .specialization-up {
   display: flex;
   margin-bottom: 20px;
-  animation: slideInUp 0.5s forwards; /* Slide-in effect */
+  animation: slideInUp 0.5s forwards;
+  /* Slide-in effect */
 }
 
 @keyframes slideInUp {
   from {
-    transform: translateY(-20px); /* Start slightly above */
-    opacity: 0; /* Start hidden */
+    transform: translateY(-20px);
+    /* Start slightly above */
+    opacity: 0;
+    /* Start hidden */
   }
+
   to {
-    transform: translateY(0); /* End at original position */
-    opacity: 1; /* Fade in */
+    transform: translateY(0);
+    /* End at original position */
+    opacity: 1;
+    /* Fade in */
   }
 }
 
@@ -827,18 +1091,23 @@ body {
 .specialization-down p {
   color: #ffffff;
   text-decoration: none;
-  font-size: 24px; /* Added 'px' unit */
+  font-size: 24px;
+  /* Added 'px' unit */
   font-weight: 500;
-  opacity: 0; /* Initially hidden */
-  animation: fadeIn 0.5s forwards; /* Fade-in effect */
+  opacity: 0;
+  /* Initially hidden */
+  animation: fadeIn 0.5s forwards;
+  /* Fade-in effect */
 }
 
 .specialization-up p {
-  animation-delay: 0.4s; /* Delay for a staggered effect */
+  animation-delay: 0.4s;
+  /* Delay for a staggered effect */
 }
 
 .specialization-down p {
-  animation-delay: 0.6s; /* Delay for a staggered effect */
+  animation-delay: 0.6s;
+  /* Delay for a staggered effect */
 }
 
 .specialization-up span,
@@ -846,9 +1115,12 @@ body {
   color: #ffffff;
   text-decoration: underline;
   font-weight: 200;
-  opacity: 0; /* Initially hidden */
-  animation: fadeIn 0.5s forwards; /* Fade-in effect */
-  animation-delay: 0.5s; /* Delay for a staggered effect */
+  opacity: 0;
+  /* Initially hidden */
+  animation: fadeIn 0.5s forwards;
+  /* Fade-in effect */
+  animation-delay: 0.5s;
+  /* Delay for a staggered effect */
 }
 
 .specialization-1 {
@@ -856,11 +1128,13 @@ body {
   border-radius: 8px;
   margin-right: 10px;
   padding: 1.5rem;
-  transition: transform 0.3s; /* Smooth scaling */
+  transition: transform 0.3s;
+  /* Smooth scaling */
 }
 
 .specialization-1:hover {
-  transform: scale(1.02); /* Slight scaling effect on hover */
+  transform: scale(1.02);
+  /* Slight scaling effect on hover */
 }
 
 .specialization-up-icon {
@@ -888,47 +1162,62 @@ body {
 .specialization-down p {
   color: #ffffff;
   text-decoration: none;
-  font-size: 24px; /* Added 'px' unit */
+  font-size: 24px;
+  /* Added 'px' unit */
   font-weight: 500;
 }
 
 .specialization-down span {
   color: #ffffff;
-  font-size: 18px; /* Added 'px' unit */
+  font-size: 18px;
+  /* Added 'px' unit */
   font-weight: 200;
   text-decoration: underline;
 }
+
 .learning {
   width: 1100px;
   margin: 0 auto;
   margin-bottom: 25px;
-  opacity: 0; /* Initially hidden for fade-in effect */
-  animation: fadeIn 1.2s forwards; /* Fade-in animation for the section */
+  opacity: 0;
+  /* Initially hidden for fade-in effect */
+  animation: fadeIn 1.2s forwards;
+  /* Fade-in animation for the section */
 }
 
 @keyframes fadeIn {
   to {
-    opacity: 1; /* Fade to visible */
+    opacity: 1;
+    /* Fade to visible */
   }
 }
 
 .learning-head {
-  font-size: 22px; /* Added 'px' unit */
+  font-size: 22px;
+  /* Added 'px' unit */
   font-weight: 500;
   color: #e1d3fd;
-  opacity: 0; /* Initially hidden */
-  animation: slideInDown 0.8s forwards; /* Slide-in down effect */
-  animation-delay: 0.1s; /* Delay for a staggered effect */
+  opacity: 0;
+  /* Initially hidden */
+  animation: slideInDown 0.8s forwards;
+  /* Slide-in down effect */
+  animation-delay: 0.1s;
+  /* Delay for a staggered effect */
 }
 
 @keyframes slideInDown {
   from {
-    transform: translateY(-20px); /* Start slightly above */
-    opacity: 0; /* Start hidden */
+    transform: translateY(-20px);
+    /* Start slightly above */
+    opacity: 0;
+    /* Start hidden */
   }
+
   to {
-    transform: translateY(0); /* End at original position */
-    opacity: 1; /* Fade in */
+    transform: translateY(0);
+    /* End at original position */
+    opacity: 1;
+    /* Fade in */
   }
 }
 
@@ -939,18 +1228,25 @@ body {
   border: 2px solid #905ef8;
   display: flex;
   justify-content: center;
-  animation: slideInUp 0.8s forwards; /* Slide-in effect */
-  opacity: 0; /* Initially hidden */
+  animation: slideInUp 0.8s forwards;
+  /* Slide-in effect */
+  opacity: 0;
+  /* Initially hidden */
 }
 
 @keyframes slideInUp {
   from {
-    transform: translateY(20px); /* Start slightly below */
-    opacity: 0; /* Start hidden */
+    transform: translateY(20px);
+    /* Start slightly below */
+    opacity: 0;
+    /* Start hidden */
   }
+
   to {
-    transform: translateY(0); /* End at original position */
-    opacity: 1; /* Fade in */
+    transform: translateY(0);
+    /* End at original position */
+    opacity: 1;
+    /* Fade in */
   }
 }
 
@@ -964,97 +1260,122 @@ body {
 .learning-2 h2,
 .learning-3 h2 {
   color: #e1d3fd;
-  font-size: 35px; /* Added 'px' unit */
+  font-size: 35px;
+  /* Added 'px' unit */
   font-weight: 600;
-  opacity: 0; /* Initially hidden */
-  animation: fadeIn 0.6s forwards; /* Fade-in effect */
+  opacity: 0;
+  /* Initially hidden */
+  animation: fadeIn 0.6s forwards;
+  /* Fade-in effect */
 }
 
 .learning-1 h2 {
-  animation-delay: 0.4s; /* Delay for a staggered effect */
+  animation-delay: 0.4s;
+  /* Delay for a staggered effect */
 }
 
 .learning-2 h2 {
-  animation-delay: 0.5s; /* Delay for a staggered effect */
+  animation-delay: 0.5s;
+  /* Delay for a staggered effect */
 }
 
 .learning-3 h2 {
-  animation-delay: 0.6s; /* Delay for a staggered effect */
+  animation-delay: 0.6s;
+  /* Delay for a staggered effect */
 }
 
 .education-1,
 .education-2,
 .experience {
   color: #bebdbf;
-  opacity: 0; /* Initially hidden */
-  animation: fadeIn 0.6s forwards; /* Fade-in effect */
+  opacity: 0;
+  /* Initially hidden */
+  animation: fadeIn 0.6s forwards;
+  /* Fade-in effect */
 }
 
 .education-1 h3,
 .education-2 h3,
 .experience h3 {
-  font-size: 20px; /* Added 'px' unit */
+  font-size: 20px;
+  /* Added 'px' unit */
   font-weight: 500;
   color: white;
-  opacity: 0; /* Initially hidden */
-  animation: fadeIn 0.6s forwards; /* Fade-in effect */
+  opacity: 0;
+  /* Initially hidden */
+  animation: fadeIn 0.6s forwards;
+  /* Fade-in effect */
 }
 
 .education-1 h3 {
-  animation-delay: 0.6s; /* Delay for a staggered effect */
+  animation-delay: 0.6s;
+  /* Delay for a staggered effect */
 }
 
 .education-2 h3 {
-  animation-delay: 0.7s; /* Delay for a staggered effect */
+  animation-delay: 0.7s;
+  /* Delay for a staggered effect */
 }
 
 .experience h3 {
-  animation-delay: 0.8s; /* Delay for a staggered effect */
+  animation-delay: 0.8s;
+  /* Delay for a staggered effect */
 }
 
 .education-1 h5,
 .education-2 h5,
 .experience h5 {
-  font-size: 18px; /* Added 'px' unit */
+  font-size: 18px;
+  /* Added 'px' unit */
   font-weight: 250;
   color: white;
   margin: 10px 0px;
   opacity: 0.6;
-  animation: fadeIn 0.6s forwards; /* Fade-in effect */
+  animation: fadeIn 0.6s forwards;
+  /* Fade-in effect */
 }
 
 .education-1 h5 {
-  animation-delay: 0.9s; /* Delay for a staggered effect */
+  animation-delay: 0.9s;
+  /* Delay for a staggered effect */
 }
 
 .education-2 h5 {
-  animation-delay: 1.0s; /* Delay for a staggered effect */
+  animation-delay: 1.0s;
+  /* Delay for a staggered effect */
 }
 
 .experience h5 {
-  animation-delay: 1.1s; /* Delay for a staggered effect */
+  animation-delay: 1.1s;
+  /* Delay for a staggered effect */
 }
 
 .education-1 span,
 .education-2 span,
 .experience span {
-  font-size: 18px; /* Added 'px' unit */
+  font-size: 18px;
+  /* Added 'px' unit */
   font-weight: 200;
   color: white;
-  opacity: 0; /* Initially hidden */
-  animation: fadeIn 0.6s forwards; /* Fade-in effect */
+  opacity: 0;
+  /* Initially hidden */
+  animation: fadeIn 0.6s forwards;
+  /* Fade-in effect */
 }
 
 .education-1 span {
-  animation-delay: 1.2s; /* Delay for a staggered effect */
+  animation-delay: 1.2s;
+  /* Delay for a staggered effect */
 }
 
 .education-2 span {
-  animation-delay: 1.3s; /* Delay for a staggered effect */
+  animation-delay: 1.3s;
+  /* Delay for a staggered effect */
 }
 
 .experience span {
-  animation-delay: 1.4s; /* Delay for a staggered effect */
+  animation-delay: 1.4s;
+  /* Delay for a staggered effect */
 }
 
 .learning-3 {
@@ -1063,33 +1384,43 @@ body {
 
 .past-role {
   margin-left: 20px;
-  opacity: 0; /* Initially hidden */
-  animation: fadeIn 0.6s forwards; /* Fade-in effect */
+  opacity: 0;
+  /* Initially hidden */
+  animation: fadeIn 0.6s forwards;
+  /* Fade-in effect */
 }
 
 .past-role h3 {
-  font-size: 20px; /* Added 'px' unit */
+  font-size: 20px;
+  /* Added 'px' unit */
   font-weight: 700;
   color: white;
-  opacity: 0; /* Initially hidden */
-  animation: fadeIn 0.6s forwards; /* Fade-in effect */
+  opacity: 0;
+  /* Initially hidden */
+  animation: fadeIn 0.6s forwards;
+  /* Fade-in effect */
 }
 
 .past-role h5 {
-  font-size: 18px; /* Added 'px' unit */
+  font-size: 18px;
+  /* Added 'px' unit */
   font-weight: 250;
   color: white;
   margin: 10px 0px;
   opacity: 0.6;
-  animation: fadeIn 0.6s forwards; /* Fade-in effect */
+  animation: fadeIn 0.6s forwards;
+  /* Fade-in effect */
 }
 
 .past-role span {
-  font-size: 18px; /* Added 'px' unit */
+  font-size: 18px;
+  /* Added 'px' unit */
   font-weight: 200;
   color: white;
-  opacity: 0; /* Initially hidden */
-  animation: fadeIn 0.6s forwards; /* Fade-in effect */
+  opacity: 0;
+  /* Initially hidden */
+  animation: fadeIn 0.6s forwards;
+  /* Fade-in effect */
 }
 
 /* Keep the ::before statements as they are, no changes made to them */
@@ -1161,15 +1492,19 @@ body {
 
 .form {
   margin-bottom: -25px;
-  opacity: 0; /* Initially hidden */
-  animation: fadeInUp 0.8s forwards; /* Slide up and fade in */
+  opacity: 0;
+  /* Initially hidden */
+  animation: fadeInUp 0.8s forwards;
+  /* Slide up and fade in */
 }
 
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(20px); /* Slide up */
+    transform: translateY(20px);
+    /* Slide up */
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -1178,9 +1513,12 @@ body {
 
 .hr {
   margin-top: 0px;
-  opacity: 0; /* Initially hidden */
-  animation: fadeIn 0.6s forwards; /* Fade-in effect for hr */
-  animation-delay: 0.1s; /* Slight delay */
+  opacity: 0;
+  /* Initially hidden */
+  animation: fadeIn 0.6s forwards;
+  /* Fade-in effect for hr */
+  animation-delay: 0.1s;
+  /* Slight delay */
 }
 
 hr:hover {
@@ -1190,9 +1528,12 @@ hr:hover {
 .message {
   width: 350px;
   height: 110px;
-  opacity: 0; /* Initially hidden */
-  animation: fadeInUp 0.8s forwards; /* Slide up and fade in */
-  animation-delay: 0.2s; /* Slight delay */
+  opacity: 0;
+  /* Initially hidden */
+  animation: fadeInUp 0.8s forwards;
+  /* Slide up and fade in */
+  animation-delay: 0.2s;
+  /* Slight delay */
 }
 
 .form-1 input {
@@ -1203,43 +1544,57 @@ hr:hover {
   width: 350px;
   height: 12%;
   line-height: 4;
-  border-radius: 5px; /* Rounded corners */
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  border-radius: 5px;
+  /* Rounded corners */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  /* Smooth transitions */
 }
 
 .form-1 input:focus {
-  background-color: #502d9b; /* Change color on focus */
-  transform: scale(1.05); /* Slightly enlarge on focus */
+  background-color: #502d9b;
+  /* Change color on focus */
+  transform: scale(1.05);
+  /* Slightly enlarge on focus */
 }
 
 .info {
   padding: 30px 20px;
   line-height: 2;
-  opacity: 0; /* Initially hidden */
-  animation: fadeInUp 0.8s forwards; /* Slide up and fade in */
-  animation-delay: 0.3s; /* Slight delay */
+  opacity: 0;
+  /* Initially hidden */
+  animation: fadeInUp 0.8s forwards;
+  /* Slide up and fade in */
+  animation-delay: 0.3s;
+  /* Slight delay */
 }
 
 .phone {
   color: whitesmoke;
-  font-size: 17px; /* Added 'px' unit */
+  font-size: 17px;
+  /* Added 'px' unit */
   font-weight: 300;
 }
 
 .info h3 {
   color: whitesmoke;
-  font-size: 20px; /* Added 'px' unit */
+  font-size: 20px;
+  /* Added 'px' unit */
   font-weight: 450;
-  opacity: 0; /* Initially hidden */
-  animation: fadeInUp 0.8s forwards; /* Slide up and fade in */
-  animation-delay: 0.4s; /* Delay for h3 */
+  opacity: 0;
+  /* Initially hidden */
+  animation: fadeInUp 0.8s forwards;
+  /* Slide up and fade in */
+  animation-delay: 0.4s;
+  /* Delay for h3 */
 }
 
 .info a {
   color: whitesmoke;
   font-weight: 500;
-  font-size: 18px; /* Added 'px' unit */
-  transition: color 0.3s ease; /* Smooth color transition */
+  font-size: 18px;
+  /* Added 'px' unit */
+  transition: color 0.3s ease;
+  /* Smooth color transition */
 }
 
 a:hover {
@@ -1249,9 +1604,12 @@ a:hover {
 .work-togather-button {
   margin-top: 10px;
   margin-bottom: 40px;
-  opacity: 0; /* Initially hidden */
-  animation: fadeInUp 0.8s forwards; /* Slide up and fade in */
-  animation-delay: 0.5s; /* Delay for button */
+  opacity: 0;
+  /* Initially hidden */
+  animation: fadeInUp 0.8s forwards;
+  /* Slide up and fade in */
+  animation-delay: 0.5s;
+  /* Delay for button */
 }
 
 .work-togather-button button {
@@ -1260,91 +1618,121 @@ a:hover {
   width: 10rem;
   border-radius: 15px;
   color: whitesmoke;
-  font-size: 18px; /* Added 'px' unit */
+  font-size: 18px;
+  /* Added 'px' unit */
   font-weight: 700;
   border: none;
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth background color transition */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  /* Smooth background color transition */
 }
 
 .work-togather-button button:hover {
-  background-color: #231cf4; /* Darker shade on hover */
-  transform: scale(1.05); /* Slightly enlarge on hover */
+  background-color: #231cf4;
+  /* Darker shade on hover */
+  transform: scale(1.05);
+  /* Slightly enlarge on hover */
 }
 
 .footer {
   width: 100%;
-  background-color: #10171c; /* Dark background */
-  background-image: linear-gradient(to right, rgba(9, 7, 7, 0.9), rgba(36, 3, 36, 0.9)); /* Slight transparency for depth */
+  background-color: #10171c;
+  /* Dark background */
+  background-image: linear-gradient(to right, rgba(9, 7, 7, 0.9), rgba(36, 3, 36, 0.9));
+  /* Slight transparency for depth */
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 0; /* Add padding for spacing */
-  opacity: 0; /* Initially hidden */
-  animation: fadeIn 1s forwards; /* Fade in */
-  animation-delay: 0.5s; /* Delay for footer */
+  padding: 20px 0;
+  /* Add padding for spacing */
+  opacity: 0;
+  /* Initially hidden */
+  animation: fadeIn 1s forwards;
+  /* Fade in */
+  animation-delay: 0.5s;
+  /* Delay for footer */
 }
 
 .footer-logo {
   display: flex;
   justify-content: center;
-  opacity: 0; /* Initially hidden */
-  animation: slideInFromBottom 1s forwards; /* Slide in from bottom */
-  animation-delay: 0.7s; /* Delay for logo */
+  opacity: 0;
+  /* Initially hidden */
+  animation: slideInFromBottom 1s forwards;
+  /* Slide in from bottom */
+  animation-delay: 0.7s;
+  /* Delay for logo */
 }
 
 .footer-logo img {
   width: 50px;
   margin: 10px 0;
-  transition: transform 0.3s ease; /* Smooth scaling */
+  transition: transform 0.3s ease;
+  /* Smooth scaling */
 }
 
 .footer-logo img:hover {
-  transform: scale(1.1); /* Scale up on hover */
+  transform: scale(1.1);
+  /* Scale up on hover */
 }
 
 .footer-tag {
   display: flex;
   justify-content: center;
-  opacity: 0; /* Initially hidden */
-  animation: fadeIn 1s forwards; /* Fade in */
-  animation-delay: 1s; /* Delay for footer tags */
-  margin-bottom: 15px; /* Add space below tags */
+  opacity: 0;
+  /* Initially hidden */
+  animation: fadeIn 1s forwards;
+  /* Fade in */
+  animation-delay: 1s;
+  /* Delay for footer tags */
+  margin-bottom: 15px;
+  /* Add space below tags */
 }
 
 .footer-tag-1 {
-  margin: 0 10px; /* Add margin for spacing */
+  margin: 0 10px;
+  /* Add margin for spacing */
 }
 
 .footer-tag-1 a {
   text-decoration: none;
-  color: #e1d3fd; /* Light color for text */
+  color: #e1d3fd;
+  /* Light color for text */
   font-size: 18px;
   font-weight: 500;
-  transition: color 0.3s ease; /* Smooth color transition */
+  transition: color 0.3s ease;
+  /* Smooth color transition */
 }
 
 .footer-tag-1 a:hover {
-  color: #502d9b; /* Change color on hover */
+  color: #502d9b;
+  /* Change color on hover */
 }
 
 .junction {
   display: flex;
   justify-content: center;
-  opacity: 0; /* Initially hidden */
-  animation: fadeIn 1s forwards; /* Fade in */
-  animation-delay: 1.3s; /* Delay for junction */
+  opacity: 0;
+  /* Initially hidden */
+  animation: fadeIn 1s forwards;
+  /* Fade in */
+  animation-delay: 1.3s;
+  /* Delay for junction */
 }
 
 .junction p {
   color: rgb(130, 11, 221);
-  font-size: 16px; /* Slightly smaller font */
+  font-size: 16px;
+  /* Slightly smaller font */
   font-weight: 500;
-  margin: 0 5px; /* Margin for spacing */
-  transition: transform 0.3s ease; /* Smooth transform transition */
+  margin: 0 5px;
+  /* Margin for spacing */
+  transition: transform 0.3s ease;
+  /* Smooth transform transition */
 }
 
 .junction p:hover {
-  transform: scale(1.05); /* Scale up slightly on hover */
+  transform: scale(1.05);
+  /* Scale up slightly on hover */
 }
 
 /* Keyframes for animations */
@@ -1352,6 +1740,7 @@ a:hover {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -1360,8 +1749,10 @@ a:hover {
 @keyframes slideInFromBottom {
   from {
     opacity: 0;
-    transform: translateY(20px); /* Slide up */
+    transform: translateY(20px);
+    /* Slide up */
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -1369,103 +1760,192 @@ a:hover {
 }
 
 /* Media Query for Mobile Devices */
-@media screen and (max-width: 480px){
-  .header{
+@media screen and (max-width: 480px) {
+  .header {
     width: 90%;
     margin: 0 auto;
+    margin-top: 2rem;
   }
-  .profile{
+
+  .profile {
     width: 90%;
   }
-  .achivements{
+
+  .achivements {
     width: 90%;
     flex-direction: column;
     border: 4px solid #502d9b;
   }
-  .achivement h3{
+
+  .achivement h3 {
     font-size: 1.5rem;
     margin-left: 0px;
   }
-  .achivement h2{
+
+  .achivement h2 {
     margin-left: 0px;
     margin-top: -1rem;
   }
-  .fa-trophy, .fa-suitcase, .fa-bars, .fa-crown{
-   font-size: 5rem;
+
+  .fa-trophy,
+  .fa-suitcase,
+  .fa-bars,
+  .fa-crown {
+    font-size: 5rem;
   }
-  .specialization-up{
+
+  .specialization-up {
     flex-direction: column;
   }
-    .specialization-1{
+
+  .specialization-1 {
     margin-bottom: 1rem;
     border: 4px solid #502d9b;
   }
-  .specialization-down{
+
+  .specialization-down {
     flex-direction: column;
   }
-  .work-togather-body{
+
+  .work-togather-body {
     flex-direction: column-reverse;
   }
-  .about{
+
+  .about {
     width: 90%;
   }
-  .about-1, .about-2{
+
+  .about-1,
+  .about-2 {
     border: 4px solid #502d9b;
     margin-right: 2px;
   }
 
-  .profile{
+  .profile {
     width: 90%;
     border: 4px solid #502d9b;
+    margin-top: 4rem;
   }
-  .specialization{
+
+  .specialization {
     width: 90%;
-  } 
-  .specialization-heading{
+  }
+
+  .specialization-heading {
     text-align: center;
+    font-size: 2.5rem;
   }
-  .project-gallery{
+  .recent-projects-head{
+    font-size: 2.5rem;
+  }
+  .skills-1 h2{
+    font-size: 3.5em;  
+  }
+  .achive h1{
+    font-size: 3.5rem;
+  }
+  .project-gallery {
     width: 90%;
   }
-  .recent-projects-main{
+
+  .recent-projects-main {
     width: 90%;
     margin: 0 auto;
     flex-direction: column;
     border: 4px solid #502d9b;
   }
- .recent-projects-3 img{
-  width: 8%;
-  height: 5rem;
- }
 
-  .work-togather{
+  .recent-projects-3 img {
+    width: 8%;
+    height: 5rem;
+  }
+
+  .work-togather {
     width: 90%;
     height: 100%;
     border: 4px solid #502d9b;
   }
-  .form-1{
+
+  .specialization-up-icon i {
+    transition: 0.4s;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+  }
+  .specialization-up a{
+    font-size: 3rem;
+  }
+   .specialization-up p{
+    font-size: 2rem;
+  }
+   .specialization-down a{
+    font-size: 3rem;
+   } .specialization-down p {
+    font-size: 2rem;
+   }
+   .specialization-up span{
+    font-size: 1.5rem;
+   }
+   .specialization-down span{
+    font-size: 1.5rem;
+   }
+  .form-1 {
     width: 50%;
   }
-  .message{
+
+  .message {
     width: 100%;
   }
-  .info{
+
+  .info {
     margin-left: -1rem;
   }
-  .skills-image img{
+
+  .skills-image img {
     width: 80px;
     height: 80px;
     border: 4px solid #502d9b;
   }
-  .learning-body{
+
+  .learning-body {
     width: 90%;
     margin: 0 auto;
     border: 4px solid #502d9b;
   }
-  .learning-head{
+
+  .learning-head {
     text-align: center;
+    font-size: 2.5rem;
   }
-  .skills{
+
+  .skills {
     width: 90%;
   }
+  .skills-1 p{
+    font-size: 2rem;
+  }
+   .about-1 h1,
+  .about-2 h2 {
+    font-size: 2.5rem;
+  }
+
+  .about-1 p,
+  .about-2 p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .work-togather-head h2{
+    font-size: 3rem;
+  }
+  .work-togather-head p{
+    font-size: 2rem;
+  }
+  .info h3{
+    font-size: 1.5rem;
+    margin-top: -2rem;
+    margin-bottom: -0.7rem;
+  }
+  
 }
