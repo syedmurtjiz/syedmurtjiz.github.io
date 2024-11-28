@@ -1372,18 +1372,51 @@ a:hover {
 @media screen and (max-width: 480px){
   .header{
     width: 90%;
+    margin: 0 auto;
   }
   .profile{
     width: 90%;
   }
   .achivements{
     width: 90%;
+    flex-direction: column;
+    border: 4px solid #502d9b;
+  }
+  .achivement h3{
+    font-size: 1.5rem;
+    margin-left: 0px;
+  }
+  .achivement h2{
+    margin-left: 0px;
+    margin-top: -1rem;
+  }
+  .fa-trophy, .fa-suitcase, .fa-bars, .fa-crown{
+   font-size: 5rem;
+  }
+  .specialization-up{
+    flex-direction: column;
+  }
+    .specialization-1{
+    margin-bottom: 1rem;
+    border: 4px solid #502d9b;
+  }
+  .specialization-down{
+    flex-direction: column;
+  }
+  .work-togather-body{
+    flex-direction: column-reverse;
   }
   .about{
     width: 90%;
   }
+  .about-1, .about-2{
+    border: 4px solid #502d9b;
+    margin-right: 2px;
+  }
+
   .profile{
     width: 90%;
+    border: 4px solid #502d9b;
   }
   .specialization{
     width: 90%;
@@ -1397,15 +1430,37 @@ a:hover {
   .recent-projects-main{
     width: 90%;
     margin: 0 auto;
+    flex-direction: column;
+    border: 4px solid #502d9b;
   }
- 
+ .recent-projects-3 img{
+  width: 8%;
+  height: 5rem;
+ }
 
   .work-togather{
     width: 90%;
+    height: 100%;
+    border: 4px solid #502d9b;
+  }
+  .form-1{
+    width: 50%;
+  }
+  .message{
+    width: 100%;
+  }
+  .info{
+    margin-left: -1rem;
+  }
+  .skills-image img{
+    width: 80px;
+    height: 80px;
+    border: 4px solid #502d9b;
   }
   .learning-body{
     width: 90%;
     margin: 0 auto;
+    border: 4px solid #502d9b;
   }
   .learning-head{
     text-align: center;
