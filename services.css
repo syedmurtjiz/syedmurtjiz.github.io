@@ -328,6 +328,81 @@ background-color: black;
 .junction p {
     color: rgb(130, 11, 221);
 }
+/* Main container for the project gallery */
+.project-gallery {
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: -50px;
+}
+
+/* Left project item styling */
+.project-item-left {
+    position: relative;
+    margin-right: 30px;
+}
+
+/* Right project item styling */
+.project-item-right {
+    position: relative;
+}
+
+/* Styling for the project images */
+.project-image-left, .project-image-right {
+    background-color: #333;
+    padding: 20px 22px;
+    border-radius: 20px;
+}
+
+.project-image-left img, .project-image-right img {
+    border-radius: 20px;
+}
+
+/* Styling for the project button (appears on hover) */
+.project-button {
+    background-color: cadetblue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    border-radius: 20px;
+    display: none; /* Hidden by default */
+    color: black;
+}
+
+/* Button text styling */
+.project-button h3 {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.project-button p {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 5px 0;
+}
+
+/* Button icon styling */
+.project-button i {
+    font-size: 40px;
+    float: right;
+    font-weight: 600;
+    margin-top: -50px;
+    padding: 10px;
+    transition: transform 0.2s ease;
+}
+
+/* Hover effect for rotating the arrow */
+.project-button:hover i {
+    transform: rotate(-400deg) translateX(1px);
+}
+
+/* Display button on hover */
+.project-item-left:hover .project-button,
+.project-item-right:hover .project-button {
+    display: block;
+}
 
 
 @media only screen and (max-width: 412px) {

@@ -141,21 +141,9 @@ body {
     padding: 10px 20px;
   }
   
-  .work-togather-head h2{
-    font-size: 25px;
-    margin-left: -24px;
-    font-weight: 700;
-    color: #e1d3fd;
-    line-height: 1;
-  }
   
-  .work-togather-head p{
-    font-size: 15px;
-    margin-left: -23px;
-    font-weight: 400;
-    color: #ffffff;
-    line-height: 1.5;
-  }
+  
+  
   .work-togather-body {
     display: flex; 
     justify-content:center;
