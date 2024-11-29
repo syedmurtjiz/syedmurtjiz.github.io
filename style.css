@@ -1759,16 +1759,19 @@ a:hover {
 @media screen and (max-width: 768px) {
 
   /* CSS rules here */
- 
-  body{
-  background-color: black;
-  background-image: linear-gradient(to right, black, rgb(56, 13, 56));
-  background-size: none;
-  /* Allows for a moving background */
-  animation: none;
-  /* Animation for the gradient */
-  
-}
+
+  body {
+    background-color: black;
+    background-image: linear-gradient(to right, black, rgb(56, 13, 56));
+    background-size: none;
+    /* Allows for a moving background */
+    animation: none;
+    /* Animation for the gradient */
+
+  }
+  .header-2 .back{
+    display: flex;
+  }
   #profile {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -1807,7 +1810,8 @@ a:hover {
     display: block;
 
   }
-  .header-2 ul{
+
+  .header-2 ul {
     display: block;
   }
 
@@ -1882,7 +1886,8 @@ a:hover {
   }
 
   .specialization-down {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
   .work-togather-body {
@@ -2160,14 +2165,39 @@ a:hover {
     width: 100%;
     background-color: #10171c;
   }
-  .junction p{
+
+  .junction p {
     text-align: center;
   }
 }
+
 /* Ultra wide mobiles */
-@media (min-width: 550px) and (max-width: 768px) {
+@media (min-width: 445px) and (max-width: 768px) {
   .profile-1 img {
-    width: 50px;
-    height: 100px;
-}
+    width: 180px;
+  }
+
+  .profile-2 {
+    margin-bottom: 0rem;
+  }
+  .profile-2 h1{
+    font-size: 2rem;
+  }
+  .profile-2 button{
+    margin-left: 0rem;
+    padding: 0;
+    width: 180px;
+    height: 2rem;
+  }
+  .profile-2 p{
+    margin-top: -1rem;
+  }
+  .profile-icons{
+    margin-top: -0.5rem;
+  }
+  .about{
+  }
+  .about-2{
+    margin-top: 0;
+  }
 }
