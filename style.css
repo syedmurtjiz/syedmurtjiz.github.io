@@ -11,19 +11,17 @@ body {
   font-family: "Sora", sans-serif;
 }
 
-.main {
-  width: 1100px;
-  margin: 0 auto;
-}
 
 .header {
   width: 1100px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  animation: fadeIn 1s ease-in-out;
+  
   margin-top: 25px;
   margin-bottom: 40px;
-  animation: fadeIn 1s ease-in-out;
   /* Fade-in animation */
 }
 
@@ -1748,37 +1746,61 @@ a:hover {
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .main{
+    width: 1100px;
+    margin: 0 auto;
+  }
+}
 /* Media Query for Mobile Devices */
-@media screen and (max-width: 767px) and (max-width: 480px) {
+@media screen and (max-width: 768px) {
 
   /* CSS rules here */
-  body {
-    background-color: lightblue;
+  #profile {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  
   }
-
+  .profile-2{
+    margin-bottom: 3rem;
+  }
+  .profile-2 h1{
+    font-size: 2rem;
+    text-align: center;
+  }
+  .profile-2 p{
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .profile-2 button{
+    padding: 9px 5px;
+  }
+  .profile-icons{
+    margin-top: -3.2rem;
+  }
   .header {
     width: 90%;
     margin: 0 auto;
     margin-top: 2rem;
   }
 
-  .profile {
-    width: 90%;
-  }
+  
 
   .achivements {
     width: 90%;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     border: 4px solid #502d9b;
   }
 
   .achivement h3 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-left: 0px;
   }
 
   .achivement h2 {
-    margin-left: 0px;
+    font-size: 1.5rem;
+    margin-left: 10px;
     margin-top: -1rem;
   }
 
@@ -1786,10 +1808,11 @@ a:hover {
   .fa-suitcase,
   .fa-bars,
   .fa-crown {
-    font-size: 5rem;
+    font-size: 2rem;
   }
   .skills-2 {
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
   .skills-image {
     width: calc(33.33% - 20px);
@@ -1821,6 +1844,8 @@ a:hover {
   }
 
   .about {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     width: 90%;
   }
 
@@ -1828,6 +1853,9 @@ a:hover {
   .about-2 {
     border: 4px solid #502d9b;
     margin-right: 2px;
+  }
+  .about-2{
+    margin-top: 1rem;
   }
 
   .profile {
@@ -1850,11 +1878,11 @@ a:hover {
   }
 
   .skills-1 h2 {
-    font-size: 3.5em;
+    font-size: 2rem;
   }
 
   .achive h1 {
-    font-size: 3.5rem;
+    font-size: 2rem;
   }
 
   .project-gallery {
@@ -1947,17 +1975,17 @@ a:hover {
   }
 
   .skills-1 p {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   .about-1 h1,
   .about-2 h2 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 
   .about-1 p,
   .about-2 p {
-    font-size: 2rem;
+    font-size: 1rem;
     margin-bottom: 2rem;
   }
 
