@@ -1748,7 +1748,7 @@ a:hover {
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .main {
     width: 1100px;
     margin: 0 auto;
@@ -2163,4 +2163,11 @@ a:hover {
   .junction p{
     text-align: center;
   }
+}
+/* Ultra wide mobiles */
+@media (min-width: 550px) and (max-width: 768px) {
+  .profile-1 img {
+    width: 50px;
+    height: 100px;
+}
 }
