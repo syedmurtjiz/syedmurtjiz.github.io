@@ -1769,9 +1769,64 @@ a:hover {
     /* Animation for the gradient */
 
   }
-  .header-2 .back{
+  .header{
+    width: 100%;
+  }
+  .header-2 {
+    position: relative; /* Add this to ensure proper positioning of dropdown */
+  }
+
+  .header-2 ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #140c1c; /* Changed to match your theme */
+    width: 200px;
+    border: 1px solid #573f86; /* Changed to match your theme */
+    z-index: 1000;
+    border-radius: 8px; /* Added for better aesthetics */
+    overflow: hidden; /* Ensure border radius works with child elements */
+  }
+
+  .header-2 ul.show {  /* Changed from .active to .show */
     display: flex;
   }
+
+  .header-2 ul li {
+    text-align: center;
+    width: 100%;
+  }
+
+  .header-2 ul li a {
+    padding: 15px;
+    display: block;
+    border-bottom: 1px solid #573f86;
+    transition: background-color 0.3s ease;
+  }
+
+  .header-2 ul li a:hover {
+    background-color: #2a1454; /* Added hover effect */
+  }
+
+  .header-2 .menu-btn {
+    display: block;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+  }
+
+  .header-2 .menu-btn:hover {
+    color: #8750f7; /* Added hover effect */
+  }
+
+ 
   #profile {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -1803,18 +1858,8 @@ a:hover {
     margin-left: 0px;
   }
 
-  .header {
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 2rem;
-    display: block;
 
-  }
-
-  .header-2 ul {
-    display: block;
-  }
-
+ 
   .recent-projects {
     width: 90%;
   }
@@ -2195,8 +2240,7 @@ a:hover {
   .profile-icons{
     margin-top: -0.5rem;
   }
-  .about{
-  }
+ 
   .about-2{
     margin-top: 0;
   }
