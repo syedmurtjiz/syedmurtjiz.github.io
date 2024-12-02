@@ -1807,13 +1807,9 @@ a:hover {
     width: 90%;
     margin: 0 auto;
     margin-top: 2rem;
-    display: block;
 
   }
 
-  .header-2 ul {
-    display: block;
-  }
 
   .recent-projects {
     width: 90%;
@@ -2173,15 +2169,30 @@ a:hover {
 
 /* Ultra wide mobiles */
 @media (min-width: 445px) and (max-width: 768px) {
+  #profile{
+    border-radius: 0.5rem;
+  }
   .profile-1 img {
     width: 180px;
   }
-
+  .header-1 h2{
+    content-visibility: hidden;
+  }
+  .header-1 img{
+    width: 30px;
+    margin-top: -0.6rem;
+  }
+  .header-2{
+    margin-left: -1rem;
+  }
+  .header-2 li{
+    margin-left: -1rem;
+  }
   .profile-2 {
     margin-bottom: 0rem;
   }
   .profile-2 h1{
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .profile-2 button{
     margin-left: 0rem;
@@ -2195,9 +2206,29 @@ a:hover {
   .profile-icons{
     margin-top: -0.5rem;
   }
-  .about{
+  .profile-icons a{
+    margin-right: 0.5rem;
+  }
+  .skills-2{
+    grid-gap: 1.5rem;
   }
   .about-2{
     margin-top: 0;
+  }
+  .recent-projects-2{
+    display: grid;
+    grid-gap: 0.5rem;
+    margin-top: 0rem;
+  }
+  .recent-projects-2 p{
+    margin-top: 0rem;
+  }
+  .recent-projects-5 img{
+    width: 230px;
+    height: 276px;
+    object-fit: fill;
+    margin-top: 3rem;
+    margin-left: -4rem;
+    border-radius: 0.5rem;
   }
 }

@@ -6,10 +6,7 @@ body {
     font-family: "Sora", sans-serif;
 }
 
-.main {
-    width: 100%;
-    margin: 0 auto;
-}
+
 
 .header {
     width: 100%;
@@ -17,8 +14,10 @@ body {
     margin-bottom: 40px;
     position: relative;
     overflow: hidden;
-    animation: fadeIn 1s ease-in-out; /* Animation on header */
-    animation: fadeIn 1s ease-in-out, backgroundMove 15s linear infinite; /* Added background animation */
+    animation: fadeIn 1s ease-in-out;
+    /* Animation on header */
+    animation: fadeIn 1s ease-in-out, backgroundMove 15s linear infinite;
+    /* Added background animation */
 }
 
 .header::before {
@@ -33,7 +32,8 @@ body {
     background-size: cover;
     filter: blur(2px);
     z-index: -1;
-    animation: backgroundMove 15s linear infinite; /* Background movement animation */
+    animation: backgroundMove 15s linear infinite;
+    /* Background movement animation */
 }
 
 .header-left {
@@ -41,15 +41,18 @@ body {
     display: flex;
     align-items: center;
     margin-left: 20px;
-    opacity: 0; /* Start hidden for animation */
-    animation: slideInLeft 0.5s forwards 0.5s; /* Animation on left header */
+    opacity: 0;
+    /* Start hidden for animation */
+    animation: slideInLeft 0.5s forwards 0.5s;
+    /* Animation on left header */
 }
 
 .header-left img {
     width: 60px;
     height: 60px;
     border-radius: 30px;
-    animation: bounce 1s infinite alternate; /* Bounce animation on logo */
+    animation: bounce 1s infinite alternate;
+    /* Bounce animation on logo */
 }
 
 .header-left h2 {
@@ -71,8 +74,10 @@ body {
     display: flex;
     align-items: center;
     margin-top: 15px;
-    opacity: 0; /* Start hidden for animation */
-    animation: slideInRight 0.5s forwards 0.5s; /* Animation on right header */
+    opacity: 0;
+    /* Start hidden for animation */
+    animation: slideInRight 0.5s forwards 0.5s;
+    /* Animation on right header */
 }
 
 .header-right ul {
@@ -90,24 +95,30 @@ body {
     text-decoration: none;
     color: aliceblue;
     font-weight: 500;
-    transition: color 0.3s ease; /* Transition for hover effect */
+    transition: color 0.3s ease;
+    /* Transition for hover effect */
 }
 
 .header-right a:hover {
-    color: blueviolet; /* Change color on hover */
-    animation: shake 0.5s; /* Shake effect on hover */
+    color: blueviolet;
+    /* Change color on hover */
+    animation: shake 0.5s;
+    /* Shake effect on hover */
 }
 
 .header-right .back {
     border-radius: 20px;
     background-color: blueviolet;
     padding: 12px 30px;
-    transition: transform 0.3s; /* Transition for scale effect */
+    transition: transform 0.3s;
+    /* Transition for scale effect */
 }
 
 .header-right .back:hover {
-    transform: scale(1.1); /* Scale up on hover */
-    animation: rotate 0.5s; /* Rotate effect on hover */
+    transform: scale(1.1);
+    /* Scale up on hover */
+    animation: rotate 0.5s;
+    /* Rotate effect on hover */
 }
 
 .header-center {
@@ -120,8 +131,10 @@ body {
     font-weight: 600;
     font-size: 40px;
     margin-top: 100px;
-    opacity: 0; /* Start hidden for animation */
-    animation: fadeIn 0.5s forwards 1s; /* Animation on center heading */
+    opacity: 0;
+    /* Start hidden for animation */
+    animation: fadeIn 0.5s forwards 1s;
+    /* Animation on center heading */
 }
 
 .header-center-body {
@@ -153,6 +166,7 @@ body {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -163,6 +177,7 @@ body {
         transform: translateX(-100%);
         opacity: 0;
     }
+
     to {
         transform: translateX(0);
         opacity: 1;
@@ -174,6 +189,7 @@ body {
         transform: translateX(100%);
         opacity: 0;
     }
+
     to {
         transform: translateX(0);
         opacity: 1;
@@ -184,6 +200,7 @@ body {
     0% {
         transform: translateY(0);
     }
+
     100% {
         transform: translateY(-20px);
     }
@@ -193,15 +210,19 @@ body {
     0% {
         transform: translateX(0);
     }
+
     25% {
         transform: translateX(-5px);
     }
+
     50% {
         transform: translateX(5px);
     }
+
     75% {
         transform: translateX(-5px);
     }
+
     100% {
         transform: translateX(0);
     }
@@ -211,6 +232,7 @@ body {
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
@@ -220,13 +242,16 @@ body {
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }
 }
+
 .content {
     width: 1100px;
     margin: 0 auto;
@@ -236,7 +261,8 @@ body {
     text-align: center;
     font-size: 30px;
     color: rgb(184, 123, 241);
-    animation: fadeIn 3s ease-in-out; /* Fade-in animation */
+    animation: fadeIn 3s ease-in-out;
+    /* Fade-in animation */
 }
 
 .content-body {
@@ -251,17 +277,20 @@ body {
     font-size: 30px;
     font-weight: 700;
     margin-left: -80px;
-    transition: transform 30s ease; /* Smooth transform on hover */
+    transition: transform 30s ease;
+    /* Smooth transform on hover */
 }
 
 .content-left-heading:hover,
 .content-right-heading:hover {
-    transform: scale(1.05); /* Slightly scale on hover */
+    transform: scale(1.05);
+    /* Slightly scale on hover */
 }
 
 .education {
     margin-bottom: 20px;
-    animation: slideIn 7s ease-out; /* Slide-in animation */
+    animation: slideIn 7s ease-out;
+    /* Slide-in animation */
 }
 
 .education h3 {
@@ -320,11 +349,13 @@ body {
     margin-right: 10px;
     font-size: 25px;
     color: blueviolet;
-    transition: transform 1s ease; /* Smooth transform on hover */
+    transition: transform 1s ease;
+    /* Smooth transform on hover */
 }
 
 .fa-graduation-cap:hover {
-    transform: rotate(30deg); /* Rotate icon on hover */
+    transform: rotate(30deg);
+    /* Rotate icon on hover */
 }
 
 .work h3 {
@@ -353,22 +384,36 @@ body {
     margin-right: 20px;
     color: blueviolet;
     font-size: 25px;
-    transition: transform 1s ease; /* Smooth transform on hover */
+    transition: transform 1s ease;
+    /* Smooth transform on hover */
 }
 
 .fa-briefcase:hover {
-    transform: rotate(30deg); /* Rotate icon on hover */
+    transform: rotate(30deg);
+    /* Rotate icon on hover */
 }
 
 /* Keyframe animations */
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes slideIn {
-    0% { transform: translateY(20px); opacity: 0; }
-    100% { transform: translateY(0); opacity: 1; }
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .skills {
@@ -376,8 +421,10 @@ body {
     background-color: color-mix;
     padding: 10px 20px;
     margin: 0 auto;
-    opacity: 0; /* Set initial opacity to 0 for fade-in effect */
-    animation: fadeIn 1s ease-in forwards; /* Fade-in animation */
+    opacity: 0;
+    /* Set initial opacity to 0 for fade-in effect */
+    animation: fadeIn 1s ease-in forwards;
+    /* Fade-in animation */
 }
 
 .skills-1 {
@@ -389,11 +436,13 @@ body {
     margin-top: 20px;
     color: #e1d3fd;
     text-align: center;
-    animation: slideUp 0.5s ease forwards; /* Slide-up animation */
+    animation: slideUp 0.5s ease forwards;
+    /* Slide-up animation */
 }
 
 .skills-1 p {
-    font-size: 20px; /* Fixed font-size to px */
+    font-size: 20px;
+    /* Fixed font-size to px */
     color: #bebdbf;
     margin-top: -15px;
 }
@@ -411,32 +460,39 @@ body {
     margin-right: 30px;
     background-color: #140c1c;
     border-radius: 20px;
-    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smooth transform and shadow */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    /* Smooth transform and shadow */
 }
 
 .skills-image img:hover {
-    transform: translateY(-10px) rotateY(15deg) scale(1.1); /* 3D lift, rotation, and scaling on hover */
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); /* Add shadow effect */
+    transform: translateY(-10px) rotateY(15deg) scale(1.1);
+    /* 3D lift, rotation, and scaling on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    /* Add shadow effect */
 }
 
 .skills-image h2 {
     margin-top: -50px;
     margin-left: 50px;
-    animation: popIn 0.5s ease forwards; /* Pop-in animation */
+    animation: popIn 0.5s ease forwards;
+    /* Pop-in animation */
 }
 
 .skills-image h2:hover {
     color: #bebdbf;
-    animation: pulse 0.5s infinite; /* Pulse animation on hover */
+    animation: pulse 0.5s infinite;
+    /* Pulse animation on hover */
 }
 
 .skills-image p {
     margin-left: 45px;
     margin-top: 35px;
     font-weight: 300;
-    font-size: 20px; /* Fixed font-size to px */
+    font-size: 20px;
+    /* Fixed font-size to px */
     color: aliceblue;
-    animation: fadeInUp 0.5s ease forwards; /* Fade-in-up animation */
+    animation: fadeInUp 0.5s ease forwards;
+    /* Fade-in-up animation */
 }
 
 .experience {
@@ -446,7 +502,8 @@ body {
     background-color: #0f0715;
     padding: 10px 7px 47px;
     border-radius: 30px;
-    animation: fadeIn 1s ease-in forwards; /* Fade-in animation */
+    animation: fadeIn 1s ease-in forwards;
+    /* Fade-in animation */
 }
 
 .experience-up {
@@ -464,7 +521,8 @@ body {
     font-size: 50px;
     font-weight: 800;
     color: white;
-    animation: slideIn 0.5s ease forwards; /* Slide-in animation */
+    animation: slideIn 0.5s ease forwards;
+    /* Slide-in animation */
 }
 
 .experience-body p {
@@ -491,7 +549,8 @@ body {
     color: whitesmoke;
     margin-top: -20px;
     color: #e1d3fd;
-    animation: bounce 1s ease forwards; /* Bounce animation */
+    animation: bounce 1s ease forwards;
+    /* Bounce animation */
 }
 
 .experience-bottom-anchor {
@@ -507,7 +566,8 @@ body {
 
 .experience-bottom-anchor a:hover {
     color: blueviolet;
-    animation: shake 0.5s forwards; /* Shake animation on hover */
+    animation: shake 0.5s forwards;
+    /* Shake animation on hover */
 }
 
 .footer {
@@ -516,7 +576,8 @@ body {
     background-image: linear-gradient(to right, rgb(64, 6, 64), rgb(30, 23, 23));
     justify-content: center;
     margin-top: 30px;
-    animation: fadeIn 1s ease-in forwards; /* Fade-in animation */
+    animation: fadeIn 1s ease-in forwards;
+    /* Fade-in animation */
 }
 
 .footer-logo {
@@ -529,11 +590,13 @@ body {
 
 .footer-logo img {
     width: 50px;
-    transition: transform 0.3s; /* Smooth transform */
+    transition: transform 0.3s;
+    /* Smooth transform */
 }
 
 .footer-logo img:hover {
-    transform: rotate(360deg); /* Rotate logo on hover */
+    transform: rotate(360deg);
+    /* Rotate logo on hover */
 }
 
 .footer-tag {
@@ -555,7 +618,8 @@ body {
 
 .footer-tag-1 a:hover {
     color: blueviolet;
-    animation: bounce 0.5s; /* Bounce animation on hover */
+    animation: bounce 0.5s;
+    /* Bounce animation on hover */
 }
 
 .junction {
@@ -569,41 +633,184 @@ body {
 
 /* Keyframe animations */
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes slideUp {
-    0% { transform: translateY(20px); opacity: 0; }
-    100% { transform: translateY(0); opacity: 1; }
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 @keyframes slideIn {
-    0% { transform: translateX(-20px); opacity: 0; }
-    100% { transform: translateX(0); opacity: 1; }
+    0% {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 @keyframes popIn {
-    0% { transform: scale(0.5); opacity: 0; }
-    100% { transform: scale(1); opacity: 1; }
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 @keyframes fadeInUp {
-    0% { transform: translateY(20px); opacity: 0; }
-    100% { transform: translateY(0); opacity: 1; }
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-    40% { transform: translateY(-20px); }
-    60% { transform: translateY(-10px); }
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
 }
 
 @keyframes shake {
-    0% { transform: translate(0); }
-    25% { transform: translate(-5px); }
-    50% { transform: translate(5px); }
-    75% { transform: translate(-5px); }
-    100% { transform: translate(0); }
+    0% {
+        transform: translate(0);
+    }
+
+    25% {
+        transform: translate(-5px);
+    }
+
+    50% {
+        transform: translate(5px);
+    }
+
+    75% {
+        transform: translate(-5px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
 }
 
+@media only screen and (min-width: 768px) {
+    .main {
+        width: 1100px;
+        margin: 0 auto;
+    }
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
+
+    /* CSS rules here */
+    .header {
+        width: 90%;
+    }
+
+    .content {
+        width: 90%;
+
+    }
+    .content-left-heading, .content-right-heading{
+        margin-left: 0px;
+    }
+    .content-body {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        justify-items: center;
+
+    }
+    .edustyle h3::before {
+    content: "";
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    margin-left: -69px;
+    margin-top: 7px;
+    border-radius: 26px;
+    background-color: whitesmoke;
+}
+.edustyle::before {
+    content: "";
+    height: 129px;
+    width: 1px;
+    position: absolute;
+    background-color: whitesmoke;
+    margin-left: -20px;
+    margin-top: 8px;
+}
+    
+
+    .skills {
+        width: 90%;
+    }
+
+    .skills-2 {
+        width: 90%;
+       
+
+    }
+    .education h2{
+        font-size: 17px;
+    }
+
+    .experience {
+        width: 90%;
+    }
+
+    .experience-up {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .experience-bottom{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .footer{
+        width: 90%;
+    }
+}
+
+/* Ultra wide mobiles */
+@media (min-width: 445px) and (max-width: 768px) {}
