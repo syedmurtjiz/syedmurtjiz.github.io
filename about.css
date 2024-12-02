@@ -745,7 +745,9 @@ body {
     .header {
         width: 90%;
     }
-
+    .header-left{
+        display: block;
+    }
     .content {
         width: 90%;
 
@@ -760,25 +762,17 @@ body {
 
     }
     .edustyle h3::before {
-    content: "";
     height: 18px;
-    width: 18px;
-    position: absolute;
     margin-left: -69px;
-    margin-top: 7px;
-    border-radius: 26px;
-    background-color: whitesmoke;
+    
 }
 .edustyle::before {
-    content: "";
-    height: 129px;
-    width: 1px;
-    position: absolute;
-    background-color: whitesmoke;
     margin-left: -20px;
-    margin-top: 8px;
+
 }
-    
+.work h2{
+    font-size: 17px;
+}
 
     .skills {
         width: 90%;
@@ -786,7 +780,9 @@ body {
 
     .skills-2 {
         width: 90%;
-       
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        justify-items: center;
 
     }
     .education h2{
@@ -806,6 +802,19 @@ body {
         width: 90%;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .experience-body p{
+        font-size: 2rem;
+    }
+    .experience-bottom h3{
+        font-size: 5rem;
+    }
+    .experience-bottom-anchor{
+        margin-top: -88px;
+        font-size: 1.5rem;
+    }
+    .experience{
+        margin-bottom: 0px;
     }
     .footer{
         width: 90%;
