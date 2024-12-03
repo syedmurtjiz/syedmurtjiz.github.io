@@ -397,22 +397,52 @@ body {
   .header {
     width: 100%;
   }
-  .specialization{
+
+  .specialization {
     width: 90%;
   }
-  
-  .specialization-images-up{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 20px; 
+  .specialization-nav a{
+    font-size: 14px;
+    padding: 5px 10px;
   }
-  .specialization-images-down{
+  .specialization-child{
+    padding: 9px 17px;
+  }
+  .specialization-images-up {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 20px;
   }
-  .specialization-image-left img,.specialization-image-right img,.specialization-image-down img,.specialization-image-down-right img{
-    width: 100%;
-    height: 50%;
+
+  .specialization-images-down {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
   }
+
+  .specialization-image-left img,
+  .specialization-image-right img,
+  .specialization-image-down img,
+  .specialization-image-down-right img {
+    width: 100%;
+    height: 165px;
+    margin-left: 0.9rem;
+  }
+
+  .specialization-image-left,
+  .specialization-image-down {
+    margin-right: 0;
+  }
+
+  .Portfolio-items-left:hover .specialization-images-up-button,
+  .Portfolio-items-right:hover .specialization-images-up-button,
+  .Portfolio-items-down:hover .specialization-images-up-button,
+  .Portfolio-items-down-right:hover .specialization-images-up-button {
+    width: 70%;
+    height: 15%;
+    margin-top: -130px;
+    }
+    .junction p{
+      text-align: center;
+    }
 }
