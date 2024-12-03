@@ -14,6 +14,10 @@ body {
   margin-bottom: 40px;
   position: relative;
   overflow: hidden;
+  animation: fadeIn 1s ease-in-out;
+  /* Animation on header */
+  animation: fadeIn 1s ease-in-out, backgroundMove 15s linear infinite;
+  /* Added background animation */
 }
 
 .header::before {
@@ -28,6 +32,8 @@ body {
   background-size: cover;
   filter: blur(2px);
   z-index: -1;
+  animation: backgroundMove 15s linear infinite;
+  /* Background movement animation */
 }
 
 .header-left {
@@ -35,12 +41,18 @@ body {
   display: flex;
   align-items: center;
   margin-left: 20px;
+  opacity: 0;
+  /* Start hidden for animation */
+  animation: slideInLeft 0.5s forwards 0.5s;
+  /* Animation on left header */
 }
 
 .header-left img {
   width: 60px;
   height: 60px;
   border-radius: 30px;
+  animation: bounce 1s infinite alternate;
+  /* Bounce animation on logo */
 }
 
 .header-left h2 {
@@ -62,6 +74,10 @@ body {
   display: flex;
   align-items: center;
   margin-top: 15px;
+  opacity: 0;
+  /* Start hidden for animation */
+  animation: slideInRight 0.5s forwards 0.5s;
+  /* Animation on right header */
 }
 
 .header-right ul {
@@ -79,12 +95,30 @@ body {
   text-decoration: none;
   color: aliceblue;
   font-weight: 500;
+  transition: color 0.3s ease;
+  /* Transition for hover effect */
+}
+
+.header-right a:hover {
+  color: blueviolet;
+  /* Change color on hover */
+  animation: shake 0.5s;
+  /* Shake effect on hover */
 }
 
 .header-right .back {
   border-radius: 20px;
   background-color: blueviolet;
   padding: 12px 30px;
+  transition: transform 0.3s;
+  /* Transition for scale effect */
+}
+
+.header-right .back:hover {
+  transform: scale(1.1);
+  /* Scale up on hover */
+  animation: rotate 0.5s;
+  /* Rotate effect on hover */
 }
 
 .header-center {
@@ -97,6 +131,10 @@ body {
   font-weight: 600;
   font-size: 40px;
   margin-top: 100px;
+  opacity: 0;
+  /* Start hidden for animation */
+  animation: fadeIn 0.5s forwards 1s;
+  /* Animation on center heading */
 }
 
 .header-center-body {
@@ -121,6 +159,97 @@ body {
   margin-top: 5px;
   font-size: 12px;
   margin-left: 12px;
+}
+
+/* Unique Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0% {
+      transform: translateY(0);
+  }
+
+  100% {
+      transform: translateY(-20px);
+  }
+}
+
+@keyframes shake {
+  0% {
+      transform: translateX(0);
+  }
+
+  25% {
+      transform: translateX(-5px);
+  }
+
+  50% {
+      transform: translateX(5px);
+  }
+
+  75% {
+      transform: translateX(-5px);
+  }
+
+  100% {
+      transform: translateX(0);
+  }
+}
+
+@keyframes rotate {
+  from {
+      transform: rotate(0deg);
+  }
+
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+@keyframes backgroundMove {
+  0% {
+      background-position: 0% 50%;
+  }
+
+  50% {
+      background-position: 100% 50%;
+  }
+
+  100% {
+      background-position: 0% 50%;
+  }
 }
 
 .specialization {
