@@ -1,7 +1,7 @@
 body {
     width: 100%;
     background-color: black;
-    
+
     color: #333;
     margin: 0;
     padding: 0;
@@ -15,6 +15,7 @@ body {
     margin: 0 auto;
 
 }
+
 .header {
     width: 100%;
     height: 350px;
@@ -265,9 +266,9 @@ body {
     margin: 0 auto;
     background-color: black;
     margin-top: -40px;
-  }
+}
 
-  .specialization-heading{
+.specialization-heading {
     color: #e1d3fd;
     font-size: 25px;
     font-weight: 300;
@@ -275,138 +276,150 @@ body {
     text-align: center;
 }
 
-.specialization-heading p{
+.specialization-heading p {
     font-size: 20px;
     color: whitesmoke;
 }
 
-  .specialization-up{
+.specialization-up {
     display: flex;
     margin-bottom: 20px;
     justify-content: center;
-  }
-.specialization-up a{
-  color: #ffffff;
-  text-decoration: none;
-  
 }
-.specialization a{
+
+.specialization-up a {
+    color: #ffffff;
+    text-decoration: none;
+
+}
+
+.specialization a {
     font-size: 40px;
     color: #e1d3fd;
     font-weight: 700;
 }
-.specialization p{
+
+.specialization p {
     font-size: 25px;
     color: whitesmoke;
 }
-.specialization-up p{
-  color: #ffffff;
-  font-size: 20;
-  font-weight: 500;
+
+.specialization-up p {
+    color: #ffffff;
+    font-size: 20;
+    font-weight: 500;
 }
-.specialization i{
+
+.specialization i {
     font-size: 50px;
 }
-.specialization span{
+
+.specialization span {
     font-size: 30px;
     color: #7b4ce7;
 }
 
-.specialization-up span{
-  color: #ffffff;
-  font-size: 17;
-  font-weight: 200;
-  text-decoration: underline;
+.specialization-up span {
+    color: #ffffff;
+    font-size: 17;
+    font-weight: 200;
+    text-decoration: underline;
 }
+
 .specialization-1 {
     border: 2px solid #905ef8;
     border-radius: 8px;
     margin-right: 15px;
     padding: 40px 30px 46px;
     background-color: black;
-  }
-  
-  .specialization-1:hover {
-    background-color: #7b4ce7;
-  }
-  
-.specialization-up-icon{
-  color: white;
-  padding: 13px 58px 20px 20px;
-  margin-left: -22px;
-  margin-right: -22px;
-  margin-top: -25px;
-  margin-bottom: 30px;
 }
-.specialization-up-icon i{
-  
-  color: #905ef8;
-  padding: 12px;
-}
-.specialization-2{
-  border: 2px solid #905ef8;
-  border-radius: 6px;
-  padding: 25px 22px;
-  background-color: black;
-} 
-.specialization-2:hover{
+
+.specialization-1:hover {
     background-color: #7b4ce7;
 }
 
-.specialization-down{
-  display: flex;
-  justify-content: center;
+.specialization-up-icon {
+    color: white;
+    padding: 13px 58px 20px 20px;
+    margin-left: -22px;
+    margin-right: -22px;
+    margin-top: -25px;
+    margin-bottom: 30px;
 }
 
-.specialization-down a{
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 24;
-  font-weight: 500;
+.specialization-up-icon i {
+
+    color: #905ef8;
+    padding: 12px;
 }
 
-.specialization-down p{
-  color: #ffffff;
-  font-size: 20;
-  font-weight: 500;
+.specialization-2 {
+    border: 2px solid #905ef8;
+    border-radius: 6px;
+    padding: 25px 22px;
+    background-color: black;
 }
 
-.specialization-down span{
-  color: #ffffff;
-  font-size: 18;
-  font-weight: 200;
-  text-decoration: underline;
-}
-
-
-.specialization-3{
-border: 2px solid #905ef8;
-border-radius: 6px;
-margin-right: 15px;
-padding: 40px 30px 46px;
-background-color: black;
-}
-
-.specialization-3:hover{
+.specialization-2:hover {
     background-color: #7b4ce7;
 }
 
-.specialization-4{
-border: 2px solid #905ef8;
-border-radius: 6px;
-padding: 25px 22px;
-background-color: black;
-} 
-.specialization-4:hover{
+.specialization-down {
+    display: flex;
+    justify-content: center;
+}
+
+.specialization-down a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 24;
+    font-weight: 500;
+}
+
+.specialization-down p {
+    color: #ffffff;
+    font-size: 20;
+    font-weight: 500;
+}
+
+.specialization-down span {
+    color: #ffffff;
+    font-size: 18;
+    font-weight: 200;
+    text-decoration: underline;
+}
+
+
+.specialization-3 {
+    border: 2px solid #905ef8;
+    border-radius: 6px;
+    margin-right: 15px;
+    padding: 40px 30px 46px;
+    background-color: black;
+}
+
+.specialization-3:hover {
     background-color: #7b4ce7;
 }
+
+.specialization-4 {
+    border: 2px solid #905ef8;
+    border-radius: 6px;
+    padding: 25px 22px;
+    background-color: black;
+}
+
+.specialization-4:hover {
+    background-color: #7b4ce7;
+}
+
 .footer {
     width: 100%;
-    background-color: black; 
-    background-image: linear-gradient(to right, rgb(64, 6, 64) , rgb(30, 23, 23) );
+    background-color: black;
+    background-image: linear-gradient(to right, rgb(64, 6, 64), rgb(30, 23, 23));
     justify-content: center;
     margin-top: 30px;
-    
+
 
 }
 
@@ -415,7 +428,7 @@ background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:30px;
+    padding: 30px;
 }
 
 .footer-logo img {
@@ -456,6 +469,7 @@ background-color: black;
 .junction p {
     color: rgb(130, 11, 221);
 }
+
 /* Main container for the project gallery */
 .project-gallery {
     display: flex;
@@ -475,13 +489,15 @@ background-color: black;
 }
 
 /* Styling for the project images */
-.project-image-left, .project-image-right {
+.project-image-left,
+.project-image-right {
     background-color: #333;
     padding: 20px 22px;
     border-radius: 20px;
 }
 
-.project-image-left img, .project-image-right img {
+.project-image-left img,
+.project-image-right img {
     border-radius: 20px;
 }
 
@@ -494,7 +510,8 @@ background-color: black;
     width: 100%;
     padding: 15px;
     border-radius: 20px;
-    display: none; /* Hidden by default */
+    display: none;
+    /* Hidden by default */
     color: black;
 }
 
@@ -534,12 +551,13 @@ background-color: black;
 
 @media only screen and (min-width: 768px) {
     .main {
-      width: 1100px;
-      margin: 0 auto;
+        width: 1100px;
+        margin: 0 auto;
     }
-  }
-  @media screen and (max-width: 768px) {
-    
+}
+
+@media screen and (max-width: 768px) {
+
     .header {
         width: 100%;
     }
@@ -548,30 +566,59 @@ background-color: black;
         display: block;
     }
 
-    .specialization{
+    .specialization {
         width: 90%;
     }
-    .specialization-1{
+
+    .specialization-1 {
         margin: 0;
     }
-    .specialization-3{
+
+    .specialization-3 {
         margin: 0;
     }
-  
-    .specialization-up{
+
+    .specialization-up {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         grid-gap: 20px;
     }
-    .specialization-down{
+
+    .specialization-down {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         grid-gap: 20px;
     }
 }
 
-@media (min-width: 445px) and (max-width: 768px){
-    .specialization a{
-        font-size: 30px;
+@media (min-width: 445px) and (max-width: 768px) {
+    .specialization a {
+        font-size: 20px;
     }
-}
+
+    .specialization-up-icon {
+        color: white;
+        padding: 0px;
+        margin: 0px;
+    }
+    .specialization-1{
+        margin: 0px;
+        padding: 0px;
+    }
+    .specialization-2{
+        padding: 0px;
+    }
+    .specialization-up p{
+        font-size: 17px;
+    }
+    .specialization-3, .specialization-4{
+        margin: 0px;
+        padding: 0px;
+    }
+    .specialization-down p{
+        font-size: 17px;
+    }
+    .specialization-up span,.specialization-down span{
+        font-size: 1rem;
+    }
+    }
