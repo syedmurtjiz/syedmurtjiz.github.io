@@ -743,39 +743,59 @@ body {
 
     /* CSS rules here */
     .header {
-        width: 90%;
+        width: 100%;
     }
-    .header-left{
+
+    .header-left {
         display: block;
     }
+
     .content {
         width: 90%;
 
     }
-    .content-left-heading, .content-right-heading{
+
+    .content-left-heading,
+    .content-right-heading {
         margin-left: 0px;
+        font-size: 1.5rem;
     }
+
     .content-body {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         justify-items: center;
 
     }
-    .edustyle h3::before {
-    height: 18px;
-    margin-left: -71px;
-    
-}
-.edustyle::before {
-    margin-left: -20px;
 
-}
-.work h2{
-    font-size: 17px;
-}
+    .edustyle h3::before {
+        height: 18px;
+        margin-left: -71px;
+
+    }
+
+    .edustyle::before {
+        display: none;
+    }
+
+    .edustyle h3::before {
+        display: none;
+    }
+
+    .work h2 {
+        font-size: 17px;
+    }
 
     .skills {
         width: 90%;
+    }
+
+    .skills-image p {
+        margin-top: 3.1rem;
+    }
+
+    .experience-bottom p {
+        font-size: 1.5rem;
     }
 
     .skills-2 {
@@ -784,9 +804,13 @@ body {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         justify-items: center;
         grid-gap: 30px;
-
     }
-    .education h2{
+
+    .skills-image img {
+        margin-right: 0px;
+    }
+
+    .education h2 {
         font-size: 22px;
     }
 
@@ -798,33 +822,53 @@ body {
         width: 90%;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 30px;
     }
-    .experience-bottom{
+
+    .experience-bottom-anchor {
+        text-align: justify;
+        margin: 0;
+        margin-top: 0px;
+        margin-right: 0px;
+    }
+
+    .experience-bottom {
         width: 90%;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
-    .experience-body p{
-        font-size: 2rem;
-    }
-    .experience-bottom h3{
-        font-size: 5rem;
-    }
-    .experience-bottom-anchor{
-        margin-top: -88px;
+
+    .experience-body p {
         font-size: 1.5rem;
+        text-decoration: underline;
     }
-    .experience{
+
+    .experience-bottom h3 {
+        font-size: 3rem;
+    }
+
+
+
+    .experience {
         margin-bottom: 0px;
     }
-    .experience-bottom a{
+
+    .experience-bottom a {
         font-size: 1.5rem;
         margin-left: 3rem;
     }
-    .footer{
-        width: 90%;
+
+    .footer {
+        width: 100%;
     }
 }
 
 /* Ultra wide mobiles */
-@media (min-width: 445px) and (max-width: 768px) {}
+@media (min-width: 445px) and (max-width: 768px) {
+    .content-body {
+        grid-gap: 30px;
+    }
+    .experience-bottom{
+        display: block;
+    }
+}

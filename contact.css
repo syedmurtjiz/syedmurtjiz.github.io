@@ -302,3 +302,32 @@ body {
 .junction p {
     color: rgb(130, 11, 221);
 }
+@media screen and (max-width: 768px){
+  .header{
+    width: 90%;
+  }
+  .work-togather-body{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .form{
+    margin-left: 0px;
+    margin-top: 0px;
+    line-height: 1;
+    padding: 0px; 
+   }
+   .form-up,.form-middle{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   }
+   .info{
+   width: 300px;
+  padding: 0px;
+  margin-top: 0px;
+}
+  .footer{
+    width: 90%;
+    text-align: center;
+  }
+}

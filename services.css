@@ -406,132 +406,20 @@ background-color: black;
 
 
 @media only screen and (max-width: 412px) {
-
-    .header {
-        width: 1100px;
-        height: 442px;
-        margin-bottom: 40px;
-        position: relative;
-
-    }
-    .main{
-        width: 1100px;
-    }
-    .header::before {
-        content: "";
-        position: absolute;
-        width: 1100px;
-    }
-
-    .header-body {
-        display: flex;
-        flex-wrap: wrap-reverse;
-
-    }
-
-    .header-left {
-        margin-top: -109px;
-        justify-content: right;
-        margin-left: 1px;
-    }
     
-    .header-left h2 {
-        margin-left: 25px;
-        color: white;
-        font-size: 40px;
-        font-weight: 539;
+    .header{
+        width: 90%;
+    }  
+    .specialization{
+        width: 90%;
     }
 
-    .header-left img {
-        width: 81px;
-        height: 80px;
-        border-radius: 30px;
+    .specialization-up{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
-
-    .header-right {
-        margin-top: 15px;
+    .specialization-down{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
-
-    .header-right ul {
-        display: none;
-        padding: 0;
-        margin: 0;
-    }
-
-
-    .header-right::before {
-        content: '\2630';
-        display: flex;
-        align-items: center;
-        background-image: linear-gradient(to bottom, #6c5ce7, #000000);
-        color: white;
-        padding: 16px;
-        text-align: center;
-        cursor: pointer;
-        border-radius: 5px;
-        position: relative;
-        font-size: 20px;
-        width: 50px;
-        font-size: 50px;
-        margin-left: 10px;
-    }
-
-
-    .header-right::after {
-        content: '';
-        margin-left: 8px;
-        font-size: 30px;
-    }
-
-
-    .header-right:hover ul {
-        display: block;
-        position: absolute;
-        background-color: #f9f9f9;
-        width: 100%;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-    }
-
-    .header-right ul li {
-        display: block;
-        padding: 12px 16px;
-
-    }
-
-    .header-right ul li a {
-        color: black;
-        text-decoration: none;
-        display: block;
-    }
-
-    .header-right ul li a:hover {
-        background-color: #ddd;
-    }
-
-    .header-center-heading {
-        color: white;
-        font-weight: 600;
-        font-size: 50px;
-        margin-top: 0px;
-    }
-
-    .header-center-body {
-        display: flex;
-        justify-content: center;
-        margin-top: -50px;
-    }
-
-    .header-center-body a {
-        font-size: 30px;
-    }
-
-    .header-center-body i {
-        font-size: 30px;
-    }
-
-    .header-center-body p {
-        font-size: 30px;
-    }
-
 }
