@@ -593,7 +593,8 @@ body {
 
 @media (min-width: 445px) and (max-width: 768px) {
     .specialization a {
-        font-size: 20px;
+        font-size: 19px;
+        color: #e1d3fd;
     }
 
     .specialization-up-icon {
@@ -603,17 +604,17 @@ body {
     }
     .specialization-1{
         margin: 0px;
-        padding: 0px;
+        padding: 9px 25px 30px;
     }
     .specialization-2{
-        padding: 0px;
+        padding: 9px 25px 30px;
     }
     .specialization-up p{
         font-size: 17px;
     }
     .specialization-3, .specialization-4{
         margin: 0px;
-        padding: 0px;
+        padding: 9px 25px 30px;
     }
     .specialization-down p{
         font-size: 17px;
