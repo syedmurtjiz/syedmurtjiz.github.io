@@ -7,11 +7,7 @@ body {
 }
 
 
-.main {
-  width: 1100;
-  margin: 0 auto;
 
-}
 
 .header {
   width: 100%;
@@ -431,9 +427,67 @@ body {
 .junction p {
     color: rgb(130, 11, 221);
 }
+@media only screen and (min-width: 768px) {
+  .main {
+    width: 1100px;
+    margin: 0 auto;
+  }
+  .topnav{
+    display: none;
+}
+}
 @media screen and (max-width: 768px){
   .header{
-    width: 90%;
+    width: 100%;
+  }
+  .header-left {
+    display: none;
+}
+.header-right{
+    display: none;
+}
+.header-center-heading{
+    margin-top: -22rem;
+}
+  
+  .mobile-container {
+    max-width: 480px;
+    margin: auto;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.7);        position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    color: black;
+  }
+  
+  .active {
+    background-color: rgba(0, 0, 0, 0);        color: white;
   }
   .work-togather-body{
     width: 90%;
@@ -456,7 +510,7 @@ body {
   margin-top: 0px;
 }
   .footer{
-    width: 90%;
+    width: 100%;
     text-align: center;
   }
 }

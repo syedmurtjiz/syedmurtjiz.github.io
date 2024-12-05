@@ -35,19 +35,49 @@
             </div>
         </div>
 
+        <div class="mobile-container">
+
+            <!-- Top Navigation Menu -->
+            <div class="topnav">
+              <a href="#home" class="active">Logo</a>
+              <div id="myLinks">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="profile.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+                <a href="index.html">HireMe!</a>
+              </div>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+            </div>
+            
+            <script>
+            function myFunction() {
+              var x = document.getElementById("myLinks");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+            </script>
 
         <div class="header-center">
             <div class="header-center-heading">
-                <h2>Contact</h2>
-            </div>
-            <div class="header-center-body">
-                <a href="index.html">Home</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <p>Contact</p>
-            </div>
+            <h2>Contact</h2>
+        </div>           
+        <div class="header-center-body">    
+        <a href="index.html">Home</a>
+        <i class="fa-solid fa-arrow-right"></i>
+            <p>Contact</p>
+        </div>    
         </div>
 
     </section>
+
     <section class="work-togather">
 
         <div class="work-togather-body">

@@ -25,14 +25,42 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="profile.html">Portfolio</a></li>
-                    <!-- <li><a href="">Blog+ </a></li> -->
+                    <!-- <li><a href="">Blog</a></li> -->
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="" class="back">HireMe!</a></li>
                 </ul>
             </div>
         </div>
 
-        
+        <div class="mobile-container">
+
+            <!-- Top Navigation Menu -->
+            <div class="topnav">
+              <a href="#home" class="active">Logo</a>
+              <div id="myLinks">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="profile.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+                <a href="index.html">HireMe!</a>
+              </div>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+            </div>
+            
+            <script>
+            function myFunction() {
+              var x = document.getElementById("myLinks");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+            </script>
         <div class="header-center">
             <div class="header-center-heading">
             <h2>Services</h2>
@@ -45,6 +73,7 @@
         </div>
 
     </section>
+
     <div class="main">
         <section class="specialization">
             <div class="specialization-heading">

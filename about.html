@@ -32,7 +32,41 @@
             </div>
         </div>
 
-        
+        <div class="mobile-container">
+
+            <!-- Top Navigation Menu -->
+            <div class="topnav">
+                <div class="topnav-left">           
+                    <img src="images/mylogo.png" alt="xyz">
+                    <a href="#home" class="active">Syed Murtjiz</a>
+                </div>
+                <div class="topnav-right">
+   
+              <div id="myLinks">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="profile.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+                <a href="index.html">HireMe!</a>
+              </div>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+            </div>
+            
+            <script>
+            function myFunction() {
+              var x = document.getElementById("myLinks");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+            </script>
+
         <div class="header-center">
             <div class="header-center-heading">
             <h2>About</h2>
@@ -45,6 +79,8 @@
         </div>
 
     </section>
+
+        
     <div class="main">
         <section class="content">
             <div class="content-heading">
