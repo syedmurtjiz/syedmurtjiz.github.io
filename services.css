@@ -572,7 +572,7 @@ body {
         display: none;
     }
     .header-center-heading{
-        margin-top: -22rem;
+        margin-top: 0rem;
     }
       
       .mobile-container {
@@ -608,11 +608,20 @@ body {
       }
       
       .topnav a:hover {
-        color: black;
+        color:rgb(130, 11, 221);
       }
       
       .active {
         background-color: rgba(0, 0, 0, 0);        color: white;
+      }
+      .topnav-left{
+        display: flex;
+        
+      }
+      .topnav-left img{
+        width: 44px;
+        height: 40px;
+        border-radius: 25px;
       }
 
     .specialization {

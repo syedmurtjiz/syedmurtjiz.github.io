@@ -1753,6 +1753,10 @@ a:hover {
     width: 1100px;
     margin: 0 auto;
   }
+
+  .topnav {
+    display: none;
+  }
 }
 
 /* Media Query for Mobile Devices */
@@ -1761,17 +1765,125 @@ a:hover {
   /* CSS rules here */
 
   body {
-    background-color: black;
-    background-image: linear-gradient(to right, black, rgb(56, 13, 56));
+
+    background-image: none;
     background-size: none;
     /* Allows for a moving background */
     animation: none;
     /* Animation for the gradient */
 
   }
-  .header-2 .back{
-    display: flex;
+
+  .header {
+
+    display: none;
   }
+
+  .mobile-container {
+    max-width: 480px;
+    margin: auto;
+    
+  }
+  .mobile-container h2{
+    font-size: 22px;
+    font-weight: bold;
+    background-image: linear-gradient(to right, blueviolet, #f312e8);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .hamburger-left{
+    display: flex;
+    gap: 10px;
+    margin-top: 0.2rem;
+  }
+  .hamburger-left img{
+    width: 45px;
+    border-radius: 5rem;
+    height: 45px;
+    margin-top: 0.5rem;
+    margin-left: -1.8rem;
+  }
+  .topnav {
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(135deg, #1a1a1a, #333333, #000000);
+    /* Sleek gradient with dark shades */
+    padding: 7px 40px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    /* Shadow for depth */
+    top: 0;
+    /* Keeps the navbar fixed at the top */
+    z-index: 1000;
+    /* Ensures it stays above other content */
+  }
+
+  .icon .fa-bars {
+    animation: alternate;
+    font-size: 30px;
+    font-weight: bold;
+    background-image: linear-gradient(to right, blueviolet, #f312e8);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .topnav #myLinks {
+    display: none;
+    text-align: center;
+  }
+
+  .topnav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    margin: 0 10px;
+    display: block;
+  }
+
+  .topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav .icon:hover {
+    background: none;
+    /* Hover background color */
+    color: #fff;
+    transform: translateY(-2px);
+  }
+
+  .topnav a:hover {
+    background: #ff6f61;
+    /* Hover background color */
+    color: #fff;
+    transform: translateY(-2px);
+  }
+
+  .topnav a.active {
+    color: #ff6f61;
+    /* Active link color */
+    font-weight: bold;
+  }
+
+  .topnav-left {
+    display: flex;
+
+  }
+
+  .topnav-left img {
+    width: 44px;
+    height: 40px;
+    border-radius: 25px;
+  }
+
   #profile {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -2169,61 +2281,77 @@ a:hover {
 
 /* Ultra wide mobiles */
 @media (min-width: 445px) and (max-width: 768px) {
-  #profile{
+  #profile {
     border-radius: 0.5rem;
   }
+
   .profile-1 img {
     width: 180px;
   }
-  .header-1 h2{
+
+  .header-1 h2 {
     content-visibility: hidden;
   }
-  .header-1 img{
+
+  .header-1 img {
     width: 30px;
     margin-top: -0.6rem;
   }
-  .header-2{
+
+  .header-2 {
     margin-left: -1rem;
   }
-  .header-2 li{
+
+  .header-2 li {
     margin-left: -1rem;
   }
+
   .profile-2 {
     margin-bottom: 0rem;
   }
-  .profile-2 h1{
+
+  .profile-2 h1 {
     font-size: 1.5rem;
   }
-  .profile-2 button{
+
+  .profile-2 button {
     margin-left: 0rem;
     padding: 0;
     width: 180px;
     height: 2rem;
   }
-  .profile-2 p{
+
+  .profile-2 p {
     margin-top: -1rem;
   }
-  .profile-icons{
+
+  .profile-icons {
     margin-top: -0.5rem;
   }
-  .profile-icons a{
+
+  .profile-icons a {
     margin-right: 0.5rem;
   }
-  .skills-2{
+
+  .skills-2 {
     grid-gap: 1.5rem;
   }
-  .about-2{
+
+  .about-2 {
     margin-top: 0;
   }
-  .recent-projects-2{
+
+  .recent-projects-2 {
     display: grid;
     grid-gap: 0.5rem;
     margin-top: 0rem;
   }
-  .recent-projects-2 p{
+
+  .recent-projects-2 p {
     margin-top: 0rem;
   }
-  .recent-projects-5 img{
+
+  .recent-projects-5 img {
     width: 230px;
     height: 276px;
     object-fit: fill;
